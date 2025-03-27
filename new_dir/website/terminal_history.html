@@ -1,0 +1,775 @@
+<!-- Last login: Fri Mar  7 12:43:52 on ttys000
+➜  ~ desktop
+➜  desktop scripting_practice 
+➜  scripting_practice code .
+➜  scripting_practice touch areas.py
+➜  scripting_practice ls
+areas.py            hello_world.py      hello_world.py.save
+➜  scripting_practice cat areas.py
+import math
+
+def triangle(base, height):
+    return base*height/2
+
+def rectangle(base, height):
+    return base*height
+
+def circle(radius):
+    return math.pi*(radius**2)%                                                 ➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import areas
+>>> areas.triangle(3,5)
+7.5
+>>> areas.cirlce(4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'areas' has no attribute 'cirlce'. Did you mean: 'circle'?
+>>> areas.circle(4)
+50.26548245743669
+>>> 
+KeyboardInterrupt
+>>> exit()
+➜  scripting_practice cd ..
+➜  desktop cd ..
+➜  ~ ls -l /usr/lib/python3/dist-packages/re
+ls: /usr/lib/python3/dist-packages/re: No such file or directory
+➜  ~ ls                                  
+AndroidStudioProjects
+Applications
+Creative Cloud Files Personal Account harrisoneanthony@gmail.com 1E13C8C2560078B67F000101@AdobeID
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+READ.md
+Untitled.ipynb
+Untitled1.ipynb
+bashrc
+dumps
+lab
+my_environments
+my_portfolio
+npm-global
+➜  ~ echo $PATH
+/Users/harrison/.rvm/gems/ruby-3.0.0/bin:/Users/harrison/.rvm/gems/ruby-3.0.0@global/bin:/Users/harrison/.rvm/rubies/ruby-3.0.0/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Users/harrison/.rvm/bin
+➜  ~ ls -l /harrison/lib/python3/dist-packages/re
+ls: /harrison/lib/python3/dist-packages/re: No such file or directory
+➜  ~ ls -l                                       
+total 24
+drwxr-xr-x    4 harrison  staff   128 May 11  2023 AndroidStudioProjects
+drwx------@   4 harrison  staff   128 Mar  5  2024 Applications
+drwx------    4 harrison  staff   128 Apr 11  2024 Creative Cloud Files Personal Account harrisoneanthony@gmail.com 1E13C8C2560078B67F000101@AdobeID
+drwx------@  74 harrison  staff  2368 Mar  7 12:50 Desktop
+drwx------@  21 harrison  staff   672 Oct 16 07:16 Documents
+drwx------+ 226 harrison  staff  7232 Mar  6 09:55 Downloads
+drwx------@ 109 harrison  staff  3488 Mar  1 10:30 Library
+drwx------+   4 harrison  staff   128 Nov  5  2020 Movies
+drwx------+   6 harrison  staff   192 Jan 29 15:26 Music
+drwx------+   6 harrison  staff   192 Feb 17  2021 Pictures
+drwxr-xr-x+   4 harrison  staff   128 Nov  5  2020 Public
+-rw-r--r--    1 harrison  staff    27 Feb 10  2023 READ.md
+-rw-r--r--    1 harrison  staff  1000 Mar  6 09:51 Untitled.ipynb
+-rw-r--r--    1 harrison  staff  1756 Mar  5 14:04 Untitled1.ipynb
+-rw-r--r--    1 harrison  staff     0 Oct  3  2023 bashrc
+drwxr-xr-x    4 harrison  staff   128 Feb  1  2023 dumps
+drwxr-xr-x    2 harrison  staff    64 Jun 20  2023 lab
+drwxr-xr-x    4 harrison  staff   128 Feb 13  2023 my_environments
+drwxr-xr-x    3 harrison  staff    96 Feb 27  2023 my_portfolio
+drwxr-xr-x    4 harrison  staff   128 Nov 11  2023 npm-global
+➜  ~ PYTHON3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import shutil
+>>> du = shutil.disk_usage("/")
+>>> print(du)
+usage(total=499963174912, used=298771304448, free=201191870464)
+>>> du.free/du.total*100
+40.24133787441693
+>>> import psutil
+>>> psutil.cpu_percent(0.1)
+11.3
+>>> psutil.cpu_percent(0.1)
+12.2
+>>> psutil.cpu_percent(0.1)
+15.9
+>>> psutil.cpu_percent(0.1)
+12.2
+>>> psutil.cpu_percent(0.5)
+14.8
+>>> psutil.cpu_percent(0.5)
+12.2
+>>> psutil.cpu_percent(0.5)
+13.4
+>>> psutil.cpu_percent(0.5)
+12.6
+>>> exit()
+➜  ~ atom
+zsh: command not found: atom
+➜  ~ sudo apt install atom
+Password:
+The operation couldn’t be completed. Unable to locate a Java Runtime.
+Please visit http://www.java.com for information on installing Java.
+
+➜  ~ atom
+➜  ~ code
+➜  ~ atom
+➜  ~ chmod +x health_check.py
+chmod: health_check.py: No such file or directory
+➜  ~ ls
+AndroidStudioProjects
+Applications
+Creative Cloud Files Personal Account harrisoneanthony@gmail.com 1E13C8C2560078B67F000101@AdobeID
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Pictures
+Public
+READ.md
+Untitled.ipynb
+Untitled1.ipynb
+bashrc
+dumps
+lab
+my_environments
+my_portfolio
+npm-global
+➜  ~ desktop
+➜  desktop ls
+1557928818209.jpeg
+161_Commercial_St__2-1.pdf
+2024 tax documents
+40B - Lottery Pre-Screening Homeownership Application.pdf
+4sale
+609173.jpeg
+ACFrOgDUgHR8ShxFlnsDyP1LvgC49jKlfi8DChJaIV-bIocgNKnJpR5Ul_641UPhUoz7RQWTU0Sv-_6co6c2AMbyhqMTxmTyci0vt851dpmUu_SPf-e0vwaeIN2z6t8QLvqbjjjFs3KszQBazuQQ.pdf
+ADA_Medical_History.pdf
+AWS
+Bartending
+BeeDevServices
+Coding Dojo Career Change Essay.docx
+Coding-Dojo
+DS11_Complete.pdf
+Dad stuff
+Doc_by_Scan_Shot.pdf
+Freelance work
+Hayley
+IMG_6013.heic
+IMG_6013.pdf
+INSURED1.IMAGE Copy - AMENDMENT.pdf
+Insurance_Form.pdf
+Journal
+Ledger Live.app
+Old ball game (1).sb3
+Portfolio_website
+Python 3.10
+Quinn
+RTA FORM.pdf
+Resume:Job material
+Robinhood Markets Consolidated Form 1099.pdf
+Screen Shot 2022-09-19 at 1.57.51 PM.png
+Screen Shot 2022-10-11 at 10.45.40 PM.png
+Screenshot 2023-02-28 at 11.48.04 PM.png
+Screenshot 2023-02-28 at 5.16.47 PM.png
+Screenshot 2023-02-28 at 5.17.36 PM.png
+Screenshot 2023-02-28 at 5.35.27 PM.png
+Screenshot 2023-09-19 at 5.19.08 PM 1.png
+Screenshot 2023-09-19 at 5.19.08 PM.png
+Screenshot 2023-10-26 at 6.06.57 PM.png
+SeoulKitchenWebsite
+Simulator Screen Recording - iPhone 14 Pro - 2023-06-20 at 20.15.27.mp4
+Simulator Screenshot - iPhone 14 Pro - 2023-07-23 at 20.12.50.png
+Solutions
+Sub wallet.docx
+Sublime Text.app
+TTLREG100 - Registration and Title Application_fillable_0.pdf
+Visual Studio Code.app
+Xcode
+YelpMe.xcworkspace
+c_sharp
+direct deposit.0789.pdf
+direct deposit.0805.pdf
+fail.png
+first time home buyer
+from-software-elden-ring-screen-shot-hd-wallpaper-preview.jpeg
+games
+logoipsum-276.svg
+modal error.png
+neighborhoodevents.png
+onclick for login in nav bar.png
+open_source
+proof of residency
+react
+scripting_practice
+ticking clock.png
+tips_commercial_on_premise_alcohol_server_training.pdf
+untitled folder
+vet form.pdf
+zoom.us
+➜  desktop scripting_practice 
+➜  scripting_practice ls
+__pycache__         health_check.py     hello_world.py.save
+areas.py            hello_world.py
+➜  scripting_practice chmod +x health_check.py
+➜  scripting_practice ./health_check.py
+env: python: No such file or directory
+➜  scripting_practice ls
+__pycache__         health_check.py     hello_world.py.save
+areas.py            hello_world.py
+➜  scripting_practice python --version
+zsh: command not found: python
+➜  scripting_practice python3 --version
+Python 3.10.7
+➜  scripting_practice chmod +x health_check.py
+➜  scripting_practice ./health_check.py      
+Everything is ok!
+➜  scripting_practice ./health_check.py
+zsh: no such file or directory: ./health_check.py
+➜  scripting_practice chmod +x health_check.py
+chmod: health_check.py: No such file or directory
+➜  scripting_practice ls                      
+__pycache__         health_checks.py    hello_world.py.save
+areas.py            hello_world.py
+➜  scripting_practice chmod +x health_check.py
+chmod: health_check.py: No such file or directory
+➜  scripting_practice ./health_checks.py      
+Everything is ok!
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> file =open("spider.txt")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'spider.txt'
+>>> exit()
+➜  scripting_practice file = open("health_checks.py")
+zsh: unknown file attribute: h
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> file =open("health_checks.py")
+>>> print(file.readline())
+#!/usr/bin/env python3
+
+>>> print(file.read())
+
+import shutil
+import psutil
+
+def check_disk_usage(disk):
+    du = shutil.disk_usage(disk)
+    free = du.free / du.total * 100
+    return free > 20
+
+def check_cpu_usage():
+    usage = psutil.cpu_percent(1)
+    return usage < 75
+
+if not check_disk_usage("/") or not check_cpu_usage():
+    print("ERROR!")
+else:
+    print("Everything is ok!")
+>>> file.close()
+>>> with open("health_checks.py") as file: print(file.readline())
+... 
+#!/usr/bin/env python3
+
+>>> file.close()
+>>> with open("health_checks.py") as file:
+... for line in file:
+  File "<stdin>", line 2
+    for line in file:
+    ^
+IndentationError: expected an indented block after 'with' statement on line 1
+>>> with open("health_checks.py") as file:
+... for line in file: print(line.upper())
+  File "<stdin>", line 2
+    for line in file: print(line.upper())
+    ^
+IndentationError: expected an indented block after 'with' statement on line 1
+>>> for line in file:
+...     for line in file: print(line.upper())
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: I/O operation on closed file.
+>>> with open("health_checks.py") as file:
+...     for line in file:
+...             print(line.upper())
+... 
+#!/USR/BIN/ENV PYTHON3
+
+
+
+IMPORT SHUTIL
+
+IMPORT PSUTIL
+
+
+
+DEF CHECK_DISK_USAGE(DISK):
+
+    DU = SHUTIL.DISK_USAGE(DISK)
+
+    FREE = DU.FREE / DU.TOTAL * 100
+
+    RETURN FREE > 20
+
+
+
+DEF CHECK_CPU_USAGE():
+
+    USAGE = PSUTIL.CPU_PERCENT(1)
+
+    RETURN USAGE < 75
+
+
+
+IF NOT CHECK_DISK_USAGE("/") OR NOT CHECK_CPU_USAGE():
+
+    PRINT("ERROR!")
+
+ELSE:
+
+    PRINT("EVERYTHING IS OK!")
+>>> with open("health_checks.py") as file:
+...     for line in file:
+...             print(line.strip().upper())
+... 
+#!/USR/BIN/ENV PYTHON3
+
+IMPORT SHUTIL
+IMPORT PSUTIL
+
+DEF CHECK_DISK_USAGE(DISK):
+DU = SHUTIL.DISK_USAGE(DISK)
+FREE = DU.FREE / DU.TOTAL * 100
+RETURN FREE > 20
+
+DEF CHECK_CPU_USAGE():
+USAGE = PSUTIL.CPU_PERCENT(1)
+RETURN USAGE < 75
+
+IF NOT CHECK_DISK_USAGE("/") OR NOT CHECK_CPU_USAGE():
+PRINT("ERROR!")
+ELSE:
+PRINT("EVERYTHING IS OK!")
+>>> file = open("health_checks.py")
+>>> lines = file.readlines()
+>>> file.close()
+>>> lines.sort()
+>>> print(lines)
+['\n', '\n', '\n', '\n', '    du = shutil.disk_usage(disk)\n', '    free = du.free / du.total * 100\n', '    print("ERROR!")\n', '    print("Everything is ok!")', '    return free > 20\n', '    return usage < 75\n', '    usage = psutil.cpu_percent(1)\n', '#!/usr/bin/env python3\n', 'def check_cpu_usage():\n', 'def check_disk_usage(disk):\n', 'else:\n', 'if not check_disk_usage("/") or not check_cpu_usage():\n', 'import psutil\n', 'import shutil\n']
+>>> exit()
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> with open("novel.txt", "w") as file:
+...     file.write("It was a dark and stormy night")
+... 
+30
+>>> exit()
+➜  scripting_practice ls
+__pycache__         health_checks.py    hello_world.py.save
+areas.py            hello_world.py      novel.txt
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> guests = open("guests.txt", "w")
+>>> initial_guests = ["Bob", "Andrea", "Manuel", "Polly", "Khalid"]
+>>> for i in initial_guests:
+...     guests.write(i + "\n")
+... 
+4
+7
+7
+6
+7
+>>> guests.close()
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+>>> new_guests = ["Sam", "Danielle", "Jacob"]
+>>> 
+>>> with open("guess.txt", "a") as guests:
+...     for i in new_guests:
+...             guests.append(i + "\n")
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+AttributeError: '_io.TextIOWrapper' object has no attribute 'append'
+>>> with open("guess.txt", "a") as guests:
+...     for i in new_guests:
+...             guests.write(i + "\n")
+... guest.close()
+  File "<stdin>", line 4
+    guest.close()
+    ^^^^^
+SyntaxError: invalid syntax
+>>> with open("guess.txt", "a") as guests:
+...     for i in new_guests:
+...             guests.write(i + "\n")
+... 
+4
+9
+6
+>>> guest.close()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'guest' is not defined. Did you mean: 'guests'?
+>>> guests.close()
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+>>> new_guests = ["Sam", "Danielle", "Jacob"]
+>>> 
+>>> with open("guests.txt", "a" as guests:
+  File "<stdin>", line 1
+    with open("guests.txt", "a" as guests:
+                                ^^
+SyntaxError: invalid syntax
+>>> new_guests = ["Sam", "Danielle", "Jacob"]
+>>> 
+>>> with open("guests.txt", "a") as guests:
+...     for i in new_guests:
+...             guests.write(i + "\n")
+... 
+4
+9
+6
+>>> guests.close()
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+Sam
+
+Danielle
+
+Jacob
+
+>>> checked_out = ["Andrea", "Manuel", "Khalid"]
+>>> temp_list=[]
+>>> 
+>>> with open("guests.txt", "r") as guests:
+...     for g in guests:
+...             temp_list.append(g.strip())
+... 
+>>> with open("guests.txt", "a") as guests:
+...     for name in temp_list:
+...             if name not in checked_out:
+...                     guest.write(name + "\n")
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+NameError: name 'guest' is not defined. Did you mean: 'guests'?
+>>> with open("guests.txt", "a") as guests:
+...     for name in temp_list:
+...             if name not in checked_out:
+...                     guests.write(name + "\n")
+... 
+4
+6
+4
+9
+6
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+Sam
+
+Danielle
+
+Jacob
+
+Bob
+
+Polly
+
+Sam
+
+Danielle
+
+Jacob
+
+>>> guests = open("guests.txt", "w")
+>>> initial_guests = ["Bob", 
+... 
+... 
+... 
+... 
+... 
+... "Andrea", "Manuel", "Polly", "Khalid"]
+>>> guests = open("guests.txt", "w")
+>>> initial_guests = ["Bob", "Andrea", "Manuel", "Polly", "Khalid"] 
+>>> for i in initial_guests:
+...     guests.write(i+ "\n")
+... 
+4
+7
+7
+6
+7
+>>> guests.close()
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+>>> new_guests = ["Sam", "Danielle", "Jacob"]
+>>> 
+>>> with open ("guests.txt", "a") as guests:
+...     for i in new_guests:
+...             guests.write(i + "\n")
+... 
+4
+9
+6
+>>> guests.close()
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Andrea
+
+Manuel
+
+Polly
+
+Khalid
+
+Sam
+
+Danielle
+
+Jacob
+
+>>> check_out=["Andrea", "Manuel", "Khalid"]
+>>> temp_list=[]
+>>> 
+>>> with open("guests.txt", "r") as guests:
+...     for g in guests:
+...             temp_list.append(g.strip())
+... 
+>>> with open("guests.txt", "w") as guests:
+...     for name in temp_list:
+...             if name not in checked_out:
+...                     guests."write"(name + "\n")
+  File "<stdin>", line 4
+    guests."write"(name + "\n")
+           ^^^^^^^
+SyntaxError: invalid syntax
+>>> with open("guests.txt", "w") as guests:
+...     for name in temp_list:
+...             if name not in checked_out:
+...                     guests.write(name + "\n")
+... 
+4
+6
+4
+9
+6
+>>> with open("guests.txt") as guests:
+...     for line in guests:
+...             print(line)
+... 
+Bob
+
+Polly
+
+Sam
+
+Danielle
+
+Jacob
+
+>>> guests_to_check = ['Bob', 'Andrea']
+>>> check_in=[]
+>>> with open("guests.txt", "r") as guests:
+...     for g in guests:
+...             check_in.append(g.strip())
+...     for check in guests_to_check:
+...             if check in checked_in:
+...                     print("{} is checked in".format(check))
+...             else:
+...                     print("{} is not checked in".format(check))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+NameError: name 'checked_in' is not defined. Did you mean: 'check_in'?
+>>> guests_to_check = ['Bob', 'Andrea']
+>>> checked_in=[]
+>>> with open("guests.txt", "r") as guests:
+...     for g in guests:
+...             check_in.append(g.strip())
+...     for check in guests_to_check:
+...             if check in checked_in:
+...                     print("{} is checked in".format(check))
+...             else:
+...                     print("{} is not checked in".format(check))
+... 
+Bob is not checked in
+Andrea is not checked in
+>>> exit()
+➜  scripting_practice ls
+__pycache__         health_checks.py    novel.txt
+areas.py            hello_world.py
+guests.txt          hello_world.py.save
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.remove("novel.txt")
+>>> os.rename("first_draft.txt", "finished_masterpiece.txt")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'first_draft.txt' -> 'finished_masterpiece.txt'
+>>> os.path.exists("finished_masterpiece.txt")
+False
+>>> os.path.getsize("spider.txt")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [Errno 2] No such file or directory: 'spider.txt'
+>>> os.path.getsize("health_checks.py")
+363
+>>> os.path.getmtime("health_checks.py")
+1741374653.9721344
+>>> import datetime
+>>> timestamp = os.path.getmtime("heath_checks.py")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/genericpath.py", line 55, in getmtime
+    return os.stat(filename).st_mtime
+FileNotFoundError: [Errno 2] No such file or directory: 'heath_checks.py'
+>>> import datetime
+>>> timestamp = os.path.getmtime("health_checks.py")
+>>> datetime.datetime.fromtimestamp(timestamp)
+datetime.datetime(2025, 3, 7, 14, 10, 53, 972134)
+>>> os.path.abspath("health_checks.py")
+'/Users/harrison/Desktop/scripting_practice/health_checks.py'
+>>> print(os.getcwd())
+/Users/harrison/Desktop/scripting_practice
+>>> os.mkdir("new_dir")
+>>> os.chdir("new_dir")
+>>> os.getcwd()
+'/Users/harrison/Desktop/scripting_practice/new_dir'
+>>> os.mkdir("newer_dir")
+>>> os.rmdir("newer_dir")
+>>> import os
+>>> os.listdir("website")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'website'
+>>> os.listdir()
+[]
+>>> dir = "website"
+>>> for name in os.listdir(dir):
+...     fullname = os.path.join(dir, name)
+...     if os.path.isdir(fullname):
+...             print("{} is a directory".format(fullname))
+...     else:
+...             print("{} is a file".format(fullname))
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'website'
+>>> os.listdir()
+[]
+>>> cd
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'cd' is not defined. Did you mean: 'id'?
+>>> import os
+>>> os.listidr("website")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'os' has no attribute 'listidr'. Did you mean: 'listdir'?
+>>> os.listdir("website")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'website'
+>>> import os
+>>> os.listdir("website")
+['favicon.ico', 'index.html', 'images']
+>>> dir = "website"
+>>> for name in os.listdir(dir):
+...     fullname = os.path.join(dir, name)
+...             if os.path.isdir(fullname):
+  File "<stdin>", line 3
+    if os.path.isdir(fullname):
+IndentationError: unexpected indent
+>>> dir = "website"
+>>> for name in os.listdir(dir):
+...     fullname = os.path.join(dir, name)
+...     if os.path.isdir(fullname):
+...             print("{} is a directory".format(fullname))
+...     else:
+...             print("{} is a file".format(fullname))
+... 
+website/favicon.ico is a file
+website/index.html is a file
+website/images is a file
+>>>  -->

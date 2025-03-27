@@ -1,0 +1,2632 @@
+MANAGING FILES AND DIRECTORIES
+
+The create_python_script function creates a new python script in the current working directory, adds the line of comments to it declared  by the 'comments' variable, and returns the size of the new file. Fill in the gaps to create a script called "program.py".
+
+import os
+
+def create_python_script(filename):
+    comments = "# Start of a new Python program"
+    
+    # Open the file in write mode and write the comments
+    with open(filename, "w") as file:
+        file.write(comments + "\n")  # Add a newline after the comment
+
+    # Get the file size
+    filesize = os.path.getsize(filename)
+    
+    return filesize
+
+# Test the function
+print(create_python_script("program.py"))
+
+
+
+
+The new_directory function creates a new directory inside the current working directory, then creates a new empty file inside the new directory, and returns the list of files in that directory. Fill in the gaps to create a file "script.py" in the directory "PythonPrograms". 
+
+import os
+
+def new_directory(directory, filename):
+  # Before creating a new directory, check to see if it already exists
+  if os.path.isdir(directory) == False:
+    os.mkdir(directory)
+
+  # Create the new file inside of the new directory
+  os.chdir(directory)
+  with open (filename, "w") as file:
+    pass
+
+  # Return the list of files in the new directory
+  return os.listdir()
+
+print(new_directory("PythonPrograms", "script.py"))
+
+
+
+The file_date function creates a new file in the current working directory, checks the date that the file was modified, and returns just the date portion of the timestamp in the format of yyyy-mm-dd. Fill in the gaps to create a file called "newfile.txt" and check the date that it was modified.
+
+import os
+import datetime
+
+def file_date(filename):
+  # Create the file in the current directory
+  with open(filename, "w"):
+    pass
+  timestamp = os.path.getmtime(filename)
+  # Convert the timestamp into a readable format, then into a string
+  date = datetime.datetime.fromtimestamp(timestamp)
+  # Return just the date portion 
+  # Hint: how many characters are in “yyyy-mm-dd”? 
+  return ("{}".format(date.strftime("%Y-%m-%d")))
+
+print(file_date("newfile.txt")) 
+# Should be today's date in the format of yyyy-mm-dd
+
+
+
+The parent_directory function returns the name of the directory that's located just above the current working directory. Remember that '..' is a relative path alias that means "go up to the parent directory". Fill in the gaps to complete this function.
+
+import os
+def parent_directory():
+  # Create a relative path to the parent 
+  # of the current working directory 
+  relative_parent = os.path.join(os.getcwd(), "..")
+
+  # Return the absolute path of the parent directory
+  return os.path.abspath(relative_parent)
+
+print(parent_directory())
+
+
+
+
+
+
+GENERATING CSV
+
+>>> hosts = [["wordstation.local", "192.168.25.46"], ["webserver.cloud", "10.2.5.6"]]
+>>> with open('hosts.csv', 'w') as hosts_csv:
+...     writer = csv.writer(hosts_csv)
+...     writer.writerows(hosts)
+... 
+>>> cat hosts.csv
+  File "<stdin>", line 1
+    cat hosts.csv
+        ^^^^^
+SyntaxError: invalid syntax
+>>> exit()
+➜  scripting_practice cat hosts.csv 
+wordstation.local,192.168.25.46
+webserver.cloud,10.2.5.6
+➜  scripting_practice python3
+Python 3.10.7 (v3.10.7:6cc6b13308, Sep  5 2022, 14:02:52) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import csv
+>>> with open('hosts.csv', 'r') as hosts_csv:
+...     reader =csv.reader(hosts_csv)
+...     for row in reader:
+...             print(row)
+... 
+['wordstation.local', '192.168.25.46']
+['webserver.cloud', '10.2.5.6']
+>>> 
+
+
+READING AND WRITING CSVs
+
+>>> users = [ {"name": "Sol Mansi", "username": "solm", "department": "IT Infrastructure"}, {"name": "Lio Nelson", "username": "lion", "department": "User Experience Research"}, {"name": "Charlie Grey", "username": "grey c", "department": "Development"}]
+>>> keys = ["name", "username", "department"]                                         >>> with open('by_department.csv', 'w') as by_department:
+...     writer = csv.DictWriter(by_department, fieldnames=keys)
+...     writer.writeheader()
+...     writer.writerows(users)
+... 
+26
+>>> exit()
+➜  scripting_practice cat by_department
+cat: by_department: No such file or directory
+➜  scripting_practice cat by_department.csv
+name,username,department
+Sol Mansi,solm,IT Infrastructure
+Lio Nelson,lion,User Experience Research
+Charlie Grey,grey c,Development
+➜  scripting_practice 
+
+
+
+
+Question 1
+We're working with a list of flowers and some information about each one. The create_file function writes this information to a CSV file. The contents_of_file function reads this file into records and returns the information in a nicely formatted block. Fill in the gaps of the contents_of_file function to turn the data in the CSV file into a dictionary using DictReader.
+
+
+import os
+import csv
+
+# Create a file with data in it
+def create_file(filename):
+  with open(filename, "w") as file:
+    file.write("name,color,type\n")
+    file.write("carnation,pink,annual\n")
+    file.write("daffodil,yellow,perennial\n")
+    file.write("iris,blue,perennial\n")
+    file.write("poinsettia,red,perennial\n")
+    file.write("sunflower,yellow,annual\n")
+
+
+# Read the file contents and format the information about each row
+def contents_of_file(filename):
+  return_string = ""
+
+  # Call the function to create the file 
+  create_file(filename)
+
+  # Open the file
+  with open(filename, "r") as file:
+    # Read the rows of the file into a dictionary
+    reader = csv.DictReader(file)
+    # Process each item of the dictionary
+    for row in reader:
+      return_string += "a {} {} is {}\n".format(row["color"], row["name"], row["type"])
+  return return_string
+
+
+#Call the function
+print(contents_of_file("flowers.csv"))
+
+
+
+Using the CSV file of flowers again, fill in the gaps of the contents_of_file function to process the data without turning it into a dictionary. How do you skip over the header record with the field names?
+
+import os
+import csv
+
+# Create a file with data in it
+def create_file(filename):
+  with open(filename, "w") as file:
+    file.write("name,color,type\n")
+    file.write("carnation,pink,annual\n")
+    file.write("daffodil,yellow,perennial\n")
+    file.write("iris,blue,perennial\n")
+    file.write("poinsettia,red,perennial\n")
+    file.write("sunflower,yellow,annual\n")
+
+# Read the file contents and format the information about each row
+def contents_of_file(filename):
+  return_string = ""
+
+  # Call the function to create the file 
+  create_file(filename)
+
+  # Open the file
+  with open(filename, 'r') as file:
+    # Read the rows of the file
+    rows = csv.reader(file)
+    next(rows)
+    # Process each row
+    for row in rows:
+      name, color, type = row
+      # Format the return string for data rows only
+
+      return_string += "a {} {} is {}\n".format(color, name, type)
+  return return_string
+
+#Call the function
+print(contents_of_file("flowers.csv"))
+
+
+
+EXAMPLES OF COMMONLY USED REGEX EXPRESSIONS
+
+Regex examples
+r”\d{3}-\d{3}-\d{4}”  This line of code matches U.S. phone numbers in the format 111-222-3333.
+
+
+r”^-?\d*(\.\d+)?$”  This line of code matches any positive or negative number, with or without decimal places.
+
+
+r”^/(.+)/([^/]+)/$” This line of code is often used to extract specific parts of URLs or file paths, such as the directory names or filenames.
+
+
+Question 1
+The check_web_address() function checks if the text passed qualifies as a top-level web address, meaning that it contains alphanumeric characters (which includes letters, numbers, and underscores), as well as periods, dashes, and a plus sign, followed by a period and a character-only top-level domain such as ".com", ".info", ".edu", etc. Fill in the regular expression to do that, using escape characters, wildcards, repetition qualifiers, beginning and end-of-line characters, and character classes.
+
+
+import re
+def check_web_address(text):
+  pattern = r"^[a-zA-z0-9_.+-]+\.[a-zA-Z]+$"
+  result = re.search(pattern, text)
+  return result != None
+
+print(check_web_address("gmail.com")) # True
+print(check_web_address("www@google")) # False
+print(check_web_address("www.Coursera.org")) # True
+print(check_web_address("web-address.com/homepage")) # False
+print(check_web_address("My_Favorite-Blog.US")) # True
+
+Explanation of the Regex:
+1.) ^ → Start of the string.
+2.) [a-zA-Z0-9_.+-]+ → Allows letters, numbers, underscores (_), periods (.), plus (+), and hyphens (-) before the TLD.
+3.) \. → Escaped period to separate the domain from the TLD.
+4.) [a-zA-Z]+ → Ensures the TLD consists of letters only (e.g., "com", "edu", "org").
+5.) $ → End of the string.
+
+
+Question 2
+The check_time() function checks for the time format of a 12-hour clock, as follows: the hour is between 1 and 12, with no leading zero, followed by a colon, then minutes between 00 and 59, then an optional space, and then AM or PM, in upper or lower case. Fill in the regular expression to do that. How many of the concepts that you just learned can you use here?
+
+import re
+def check_time(text):
+  pattern = r"^(1[0-2]|[1-9]):[0-5][0-9]\s?(AM|PM|am|pm)$"
+  result = re.search(pattern, text)
+  return result != None
+
+print(check_time("12:45pm")) # True
+print(check_time("9:59 AM")) # True
+print(check_time("6:60am")) # False
+print(check_time("five o'clock")) # False
+print(check_time("6:02 am")) # True
+print(check_time("6:02km")) # False
+
+Regex Explanation (r"^(1[0-2]|[1-9]):[0-5][0-9]\s?(AM|PM|am|pm)$")
+1.) ^ → Start of the string.
+2.) (1[0-2]|[1-9])
+    Matches hour values (1-9 or 10-12).
+    1[0-2] → Matches 10, 11, 12.
+    [1-9] → Matches 1-9.
+3.) : → Colon (separator between hours and minutes).
+4.) [0-5][0-9]
+    Matches minute values (00-59).
+    [0-5] → First digit (0 to 5).
+    [0-9] → Second digit (0 to 9).
+5.) \s? → Matches an optional space before AM/PM.
+6.) (AM|PM|am|pm) → Matches "AM", "PM", "am", or "pm".
+7.) $ -> end of the string
+
+
+The contains_acronym() function checks the text for the presence of 2 or more characters or digits surrounded by parentheses, with at least the first character in uppercase (if it's a letter), returning True if the condition is met, or False otherwise. For example, "Instant messaging (IM) is a set of communication technologies used for text-based communication" should return True since (IM) satisfies the match conditions." Fill in the regular expression in this function: 
+
+import re
+def contains_acronym(text):
+  pattern = r"\([A-Za-z0-9]+\)" 
+  result = re.search(pattern, text)
+  return result != None
+
+print(contains_acronym("Instant messaging (IM) is a set of communication technologies used for text-based communication")) # True
+print(contains_acronym("American Standard Code for Information Interchange (ASCII) is a character encoding standard for electronic communication")) # True
+print(contains_acronym("Please do NOT enter without permission!")) # False
+print(contains_acronym("PostScript is a fourth-generation programming language (4GL)")) # True
+print(contains_acronym("Have fun using a self-contained underwater breathing apparatus (Scuba)!")) # True
+
+Regex Explanation
+1. \(
+    Escaped Parenthesis:
+    The \( is used to escape the opening parenthesis ( because parentheses are special characters in regular expressions, used for grouping.
+    By escaping it with a backslash (\), it tells the regex engine to literally match an opening parenthesis ( in the text.
+2. [A-Za-z0-9]+
+    Character Class:
+    [A-Za-z0-9] matches any alphanumeric character (both uppercase and lowercase letters and digits).
+    A-Z: Matches any uppercase letter (A to Z).
+    a-z: Matches any lowercase letter (a to z).
+    0-9: Matches any digit (0 to 9).
+    The + quantifier means one or more of the alphanumeric characters. This ensures that the acronym inside the parentheses must contain at least one alphanumeric character (it can't be empty).
+3. \)
+    Escaped Closing Parenthesis:
+    The \) is used to escape the closing parenthesis ) because, like the opening parenthesis, the closing   parenthesis is also a special character in regular expressions (used for grouping).
+    By escaping it with a backslash (\), it tells the regex engine to literally match a closing parenthesis )   in the text.
+
+
+Question 6
+An intern implemented a zip code checker, but it works only with five-digit zip codes. Your task is to update the checker so that it includes all nine digits of the zip code; the leading five digits and the optional four after the hyphen. The zip code needs to be preceded by at least one space, and cannot be at the start of the text. Update the regular expression.
+
+import re
+
+def check_zip_code(text):
+    pattern = r"\b\d{5}(-\d{4})?\b"  
+    result = re.search(pattern, text)
+    return result is not None  # Ensures a match is found
+
+# Test Cases
+print(check_zip_code("The zip codes for New York are 10001 thru 11104."))  # ✅ True
+print(check_zip_code("90210 is a TV show"))  # ✅ True
+print(check_zip_code("Their address is: 123 Main Street, Anytown, AZ 85258-0001."))  # ✅ True
+print(check_zip_code("The Parliament of Canada is at 111 Wellington St, Ottawa, ON K1A0A9."))  # ❌ False
+
+
+Regex Explanation 
+1. \b
+    Word boundary:
+    The \b is a word boundary anchor. It ensures that the zip code is separated from other text by a non-word   character (like a space, punctuation, or the beginning/end of a string).
+    This prevents the regular expression from matching a zip code embedded inside a larger number or word. For  example, it will prevent matching 123456 (which is not a valid zip code) because there is no boundary    between the digits.
+2. \d{5}
+    \d: This represents a digit (0-9).
+    {5}: This is a quantifier that means "exactly 5 times."
+    So, \d{5} matches exactly 5 digits in a row (for example, 12345).
+3. (-\d{4})?
+    (-\d{4}):
+    This part is used to match the optional ZIP+4 extension (the four additional digits after a hyphen).
+    -: This matches a literal hyphen (-).
+    \d{4}: This matches exactly 4 digits following the hyphen (for example, 1234).
+    ?:
+    The ? quantifier means "zero or one occurrence" of the preceding group.
+    In this case, it makes the (-\d{4}) part optional. This allows the regex to match both 5-digit zip codes    (12345) and 9-digit zip codes with the extended 4 digits (12345-6789).
+4. \b
+    Another word boundary:
+    Just like the first \b, this ensures that the zip code ends at a word boundary. It prevents matching zip    codes that are followed by alphanumeric characters without a space or punctuation (for example, 12345abc).
+
+
+Add to the regular expression used in the extract_pid function, to return the uppercase message in parenthesis, after the process id.
+
+import re
+def extract_pid(log_line):
+    regex = r"\[(\d+)\]: ([A-Z]+)"
+    result = re.search(regex, log_line)
+    if result is None:
+        return None
+    return "{} ({})".format(result[1], result[2])
+
+print(extract_pid("July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade")) # 12345 (ERROR)
+print(extract_pid("99 elephants in a [cage]")) # None
+print(extract_pid("A string that also has numbers [34567] but no uppercase message")) # None
+print(extract_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Performing backup")) # 67890 (RUNNING)
+
+
+You’re working with a CSV file that contains employee information. Each record has a name field, followed by a phone number field, and a role field. The phone number field contains U.S. phone numbers and needs to be modified to the international format, with +1- in front of the phone number. The rest of the phone number should not change. Fill in the regular expression, using groups, to use the transform_record() function to do that.
+
+import re
+def transform_record(record):
+  new_record = re.sub(r"(\d{3}-\d{3}-\d{4})", r"+1-\1", record)
+  return new_record
+
+print(transform_record("Sabrina Green,802-867-5309,System Administrator")) 
+# Sabrina Green,+1-802-867-5309,System Administrator
+
+print(transform_record("Eli Jones,684-3481127,IT specialist")) 
+# Eli Jones,+1-684-3481127,IT specialist
+
+print(transform_record("Melody Daniels,846-687-7436,Programmer")) 
+# Melody Daniels,+1-846-687-7436,Programmer
+
+print(transform_record("Charlie Rivera,698-746-3357,Web Developer")) 
+# Charlie Rivera,+1-698-746-3357,Web Developer
+
+
+
+The multi_vowel_words() function returns all words with 3 or more consecutive vowels (a, e, i, o, u). Fill in the regular expression to do that.
+
+
+import re
+def multi_vowel_words(text):
+  pattern = r"\b\w*[aeiou]{3}\w*\b"
+  result = re.findall(pattern, text)
+  return result
+
+print(multi_vowel_words("Life is beautiful")) 
+# ['beautiful']
+
+print(multi_vowel_words("Obviously, the queen is courageous and gracious.")) 
+# ['Obviously', 'queen', 'courageous', 'gracious']
+
+print(multi_vowel_words("The rambunctious children had to sit quietly and await their delicious dinner.")) 
+# ['rambunctious', 'quietly', 'delicious']
+
+print(multi_vowel_words("The order of a data queue is First In First Out (FIFO)")) 
+# ['queue']
+
+print(multi_vowel_words("Hello world!")) 
+# []
+
+Explanation:
+\b: Word boundary to ensure the match occurs at the beginning and end of a word.
+\w*: Matches zero or more word characters (letters, digits, or underscores).
+[aeiou]{3}: Matches exactly three consecutive vowels (a, e, i, o, u).
+\w*: After matching the three vowels, it continues to match zero or more word characters until the end of the word.
+\b: Another word boundary at the end of the word.
+
+
+
+The transform_comments() function converts comments in a Python script into those usable by a C compiler. This means looking for text that begins with a hash mark (#) and replacing it with double slashes (//), which is the C single-line comment indicator. For the purpose of this exercise, we'll ignore the possibility of a hash mark embedded inside of a Python command, and assume that it's only used to indicate a comment. We also want to treat repetitive hash marks (##), (###), etc., as a single comment indicator, to be replaced with just (//) and not (#//) or (//#). Fill in the parameters of the substitution method to complete this function: 
+
+import re
+def transform_comments(line_of_code):
+  result = re.sub(r"(^|\s)#+", r"\1//", line_of_code)
+  return result
+
+print(transform_comments("### Start of program")) 
+# Should be "// Start of program"
+print(transform_comments("  number = 0   ## Initialize the variable")) 
+# Should be "  number = 0   // Initialize the variable"
+print(transform_comments("  number += 1   # Increment the variable")) 
+# Should be "  number += 1   // Increment the variable"
+print(transform_comments("  return(number)")) 
+# Should be "  return(number)"
+
+Explanation of the regex pattern:
+(^|\s): This part ensures we match either the beginning of the string ^ or any whitespace character \s before the hash symbol (#).
+#: This matches the # symbol.
++: This ensures we match one or more # symbols (this is necessary for replacing both single # and multiple ##, ###).
+r"\1//": This replaces the matched pattern with //, while keeping the leading whitespace (if any).
+
+
+
+
+The convert_phone_number() function checks for a U.S. phone number format: XXX-XXX-XXXX (3 digits followed by a dash, 3 more digits followed by a dash, and 4 digits), and converts it to a more formal format that looks like this: (XXX) XXX-XXXX. Fill in the regular expression to complete this function.
+
+import re
+def convert_phone_number(phone):
+  result = re.sub(r"(\b\d{3})-(\d{3})-(\d{4}\b)", r"(\1) \2-\3", phone)
+  return result
+
+print(convert_phone_number("My number is 212-345-9999.")) # My number is (212) 345-9999.
+print(convert_phone_number("Please call 888-555-1234")) # Please call (888) 555-1234
+print(convert_phone_number("123-123-12345")) # 123-123-12345
+print(convert_phone_number("Phone number of Buckingham Palace is +44 303 123 7300")) # Phone number of Buckingham Palace is +44 303 123 7300
+
+
+
+
+LAB
+import re
+import csv
+def contains_domain(address, domain):
+  """Returns True if the email address contains the given,domain,in the domain position, false if not."""
+  domain = r'[\w\.-]+@'+domain+'$'
+  if re.match(domain,address):
+    return True
+  return False
+def replace_domain(address, old_domain, new_domain):
+  """Replaces the old domain with the new domain in the received address."""
+  old_domain_pattern = r'' + old_domain + '$'
+  address = re.sub(old_domain_pattern, new_domain, address)
+  return address
+def main():
+  """Processes the list of emails, replacing any instances of the old domain with the new domain."""
+  old_domain, new_domain = 'abc.edu', 'xyz.edu'
+  csv_file_location = '/home/[virtual_machine_username]/data/user_emails.csv'
+  report_file = '/home/[virtual_machine_username]/data' + '/updated_user_emails.csv'
+  user_email_list = []
+  old_domain_email_list = []
+  new_domain_email_list = []
+  with open(csv_file_location, 'r') as f:
+    user_data_list = list(csv.reader(f))
+    user_email_list = [data[1].strip() for data in user_data_list[1:]]
+    for email_address in user_email_list:
+      if contains_domain(email_address, old_domain):
+        old_domain_email_list.append(email_address)
+        replaced_email = replace_domain(email_address,old_domain,new_domain)
+        new_domain_email_list.append(replaced_email)
+    email_key = ' ' + 'Email Address'
+    email_index = user_data_list[0].index(email_key)
+    for user in user_data_list[1:]:
+      for old_domain, new_domain in zip(old_domain_email_list, new_domain_email_list):
+        if user[email_index] == ' ' + old_domain:
+          user[email_index] = ' ' + new_domain
+  f.close()
+  with open(report_file, 'w+') as output_file:
+    writer = csv.writer(output_file)
+    writer.writerows(user_data_list)
+    output_file.close()
+main()
+
+
+
+student@60f240f5449b:~/scripts$ ./script.py
+student@60f240f5449b:~/scripts$ ls ~/data
+updated_user_emails.csv  user_emails.csv
+student@60f240f5449b:~/scripts$ cat ~/data/updated_user_emails.csv
+Full Name, Email Address
+Blossom Gill, blossom@xyz.edu
+Hayes Delgado, nonummy@utnisia.com
+Petra Jones, ac@xyz.edu
+Oleg Noel, noel@liberomauris.ca
+Ahmed Miller, ahmed.miller@nequenonquam.co.uk
+Macaulay Douglas, mdouglas@xyz.edu
+Aurora Grant, enim.non@xyz.edu
+Madison Mcintosh, mcintosh@nisiaenean.net
+Montana Powell, montanap@semmagna.org
+Rogan Robinson, rr.robinson@xyz.edu
+Simon Rivera, sri@xyz.edu
+Benedict Pacheco, bpacheco@xyz.edu
+Maisie Hendrix, mai.hendrix@xyz.edu
+Xaviera Gould, xlg@utnisia.net
+Oren Rollins, oren@semmagna.com
+Flavia Santiago, flavia@utnisia.net
+Jackson Owens, jackowens@xyz.edu
+Britanni Humphrey, britanni@ut.net
+Kirk Nixon, kirknixon@xyz.edu
+Bree Campbell, breee@utnisia.net
+student@60f240f5449b:~/scripts$ 
+
+
+
+
+
+
+You are reading an article that includes some government websites in the form:
+
+ https://www.website-domain.gov 
+
+You’d like to make a list of these websites by extracting them from the text automatically, instead of copying and pasting them by hand. Complete the function find_gov_urls() to accomplish this task for all websites that end with .gov.
+
+
+def find_gov_urls(website):
+ pattern = r"https?://(?:www\.)?[a-zA-Z0-9.-]+\.gov\b" #enter the regex pattern here
+ result = re.findall(pattern, website) #enter the re method here
+ return result
+
+
+print(find_gov_urls("https://www.data.gov is a great place to find open source datasets!")) # Should return ['https://www.data.gov']
+print(find_gov_urls("Learn more about US National Parks at https://www.nps.gov, https://www.nationalparks.org, or https://www.recreation.gov.")) # Should return ['https://www.nps.gov', 'https://www.recreation.gov']
+print(find_gov_urls("The Library of Congress (https://www.loc.gov) is an incredible resource!")) # Should return ['https://www.loc.gov']
+print(find_gov_urls("The Library of Congress (www.loc.gov) is an incredible resource!")) # Should return []
+
+Explanation of Fixed Regex:
+https?:// → Matches http:// or https://
+(?:www\.)? → Matches www. if present, but it is optional ((?:...) is a non-capturing group)
+[a-zA-Z0-9.-]+ → Matches domain names like data, nps, loc, etc.
+\.gov\b → Matches .gov at the end, ensuring it's a .gov domain (using \b to ensure .gov is not part of a longer word)
+
+
+
+Step-by-Step Breakdown:
+1️⃣ https?://
+http → Matches the literal string "http".
+s? → The ? makes the preceding character (s) optional, so it matches both http:// and https://.
+:// → Matches the literal "://", which is required in a proper URL.
+✅ Matches:
+✔ http://
+✔ https://
+❌ ftp:// (not matched)
+
+2️⃣ (?:www\.)?
+(?: ... ) → This is a non-capturing group. It groups www. together but does not store it as a separate match.
+www\. → Matches literally www.
+? → The ? makes this whole group optional, meaning URLs with or without "www." will match.
+✅ Matches:
+✔ https://www.
+✔ https:// (without www.)
+❌ https://abc. (Only www. is optional, not the dot)
+
+3️⃣ [a-zA-Z0-9.-]+
+[a-zA-Z0-9.-] → Matches letters (a-z, A-Z), numbers (0-9), dots (.), and hyphens (-). This covers the valid domain name characters.
++ → Matches one or more of the preceding characters (so the domain name is at least one character long).
+✅ Matches:
+✔ data
+✔ nps
+✔ loc.gov (though .gov is handled separately)
+❌ . (a single dot would not match)
+
+4️⃣ \.gov\b
+\. → The backslash (\) escapes the dot (.), making sure we match a literal period instead of the "any character" wildcard.
+gov → Matches the literal string "gov".
+\b → Word boundary anchor ensures .gov is not part of a longer word (e.g., matches example.gov, but not example.gov.uk).
+✅ Matches:
+✔ example.gov
+✔ nps.gov
+❌ govtest (since gov isn't at the end)
+❌ gov.uk (does not stop at .gov)
+
+Final Behavior of the Regex
+This regex successfully extracts valid .gov URLs, whether or not they include "www.", while ensuring that:
+
+The URL starts with http:// or https://.
+The domain contains letters, numbers, dots, and hyphens.
+The domain ends with .gov and is not mistakenly part of a larger word.
+
+
+
+
+
+You are exploring the punctuation at the end of sentences and want to split sentences so that each word is separate and any punctuation is included in the word next to it. Complete the parse_sentences() function to accomplish this task. 
+
+def parse_sentences(sentence):
+ pattern =r"\w+[\w!?.]*|\+|\-"  #enter the regex pattern here
+ result = re.findall(pattern, sentence) #enter the re method  here
+ return result
+
+print(parse_sentences("Hello! How are you doing?")) # should return ['Hello!', 'How', 'are', 'you', 'doing?']
+print(parse_sentences("what a beautiful day it is")) # should return ['what', 'a', 'beautiful', 'day', 'it', 'is']
+print(parse_sentences("2 + 2 is definitely 4!")) # should return ['2', '+', '2', 'is', 'definitely', '4!']
+
+Explanation of the Regex Pattern (r"\w+[\w!?.]*|\+|\-"):
+\w+ → Matches one or more word characters (letters, numbers, and underscores).
+[\w!?.]* → Matches additional word characters or punctuation (!, ?, .) that may follow a word (like Hello!).
+\+|\- → Separately captures the + or - signs (important for mathematical expressions).
+
+
+
+
+
+Extracting a PID using regexes in Python
+
+import re
+log = "July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade"
+regex = r"\[(\d+)\]"
+result = re.search(regex, log)
+result = re.search(regex, "A completely different string that also has numbers [34567]")
+result = re.search(regex, "99 elephants in a [cage]")
+def extract_pid(log_line):
+    regex = r"\[(\d+)\]"
+    result = re.search(regex, log_line)
+    if result is None:
+        return ""
+    return result[1]
+print(extract_pid(log))
+print(extract_pid("99 elephants in a [cage]"))
+
+
+
+
+
+We're using the same syslog, and we want to display the date, time, and process id that's inside the square brackets. We can read each line of the syslog and pass the contents to the show_time_of_pid function. Fill in the gaps to extract the date, time, and process id from the passed line, and return this format: Jul 6 14:01:23 pid:29440.
+
+
+import re
+def show_time_of_pid(line):
+  pattern = r"^([A-Za-z]{3} \d+ \d{2}:\d{2}:\d{2}) .*?\[(\d+)\]"
+  result = re.search(pattern, line)
+  return "{} pid:{}".format(result[1], result[2])
+
+print(show_time_of_pid("Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)")) # Jul 6 14:01:23 pid:29440
+
+print(show_time_of_pid("Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)")) # Jul 6 14:02:08 pid:29187
+
+print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)")) # Jul 6 14:02:09 pid:29187
+
+print(show_time_of_pid("Jul 6 14:03:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:03:01 pid:29440
+
+print(show_time_of_pid("Jul 6 14:03:40 computer.name cacheclient[29807]: start syncing from \"0xDEADBEEF\"")) # Jul 6 14:03:40 pid:29807
+
+print(show_time_of_pid("Jul 6 14:04:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:04:01 pid:29440
+
+print(show_time_of_pid("Jul 6 14:05:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:05:01 pid:29440
+
+
+
+
+
+
+
+
+#!/usr/bin/env python3
+
+
+import sys
+import os
+import re
+
+def error_search(log_file):
+  error = input("What is the error? ")
+  returned_errors = []
+  with open(log_file, mode='r',encoding='UTF-8') as file:
+    for log in  file.readlines():
+      error_patterns = ["error"]
+      for i in range(len(error.split(' '))):
+        error_patterns.append(r"{}".format(error.split(' ')[i].lower()))
+      if all(re.search(error_pattern, log.lower()) for error_pattern in error_patterns):
+        returned_errors.append(log)
+    file.close()
+  return returned_errors
+  
+def file_output(returned_errors):
+  with open(os.path.expanduser('~') + '/data/errors_found.log', 'w') as file:
+    for error in returned_errors:
+      file.write(error)
+    file.close()
+
+    
+if __name__ == "__main__":
+  log_file = sys.argv[1]
+  returned_errors = error_search(log_file)
+  file_output(returned_errors)
+  sys.exit(0)
+
+
+
+  Introduction
+You dealt with a program that kept throwing an error because the source code was too complicated to quickly find the error. The good news is that the program outputs a log file you could read! Let's review how to write a script to search the log file for the exact error, then output that error into a separate file so you can work out what's wrong.
+
+This exemplar is a walkthrough of the previous Qwiklab activity, including detailed instructions and solutions. You may use this exemplar if you were unable to complete the lab and/or you need extra guidance in competing lab tasks. You may also refer to this exemplar to prepare for the graded quiz in this module.
+
+View log file
+In the /data directory, there's a file named fishy.log, which contains the system log. Log entries are written in this format:
+
+1
+Month Day hour:minute:second mycomputername "process_name"["random 5 digit number"] "ERROR/INFO/WARN" "Error description"
+For every process, the runtime log that's generated contains a timestamp and appropriate message alongside. You can view all logs using the command below:
+
+1
+cat ~/data/fishy.log
+Output:
+
+123456789101112
+July 31 00:06:21 mycomputername kernel[96041]: WARN Failed to start network connection
+July 31 00:09:53 mycomputername updater[46711]: WARN Computer needs to be turned off and on again
+July 31 00:12:36 mycomputername kernel[48462]: INFO Successfully connected
+July 31 00:13:52 mycomputername updater[43530]: ERROR Error running Python2.exe: Segmentation Fault (core dumped)
+July 31 00:16:13 mycomputername NetworkManager[63902]: WARN Failed to start application install
+July 31 00:26:45 mycomputernam
+Find an error
+In this lab, we'll search for the CRON error that failed to start. To do this, we'll use a python script to search log files for a particular type of ERROR log. In this case, we'll search for a CRON error within the fishy.log file that failed to start by narrowing our search to "CRON ERROR Failed to start".
+
+To get started, let's create a python script named find_error.py within scripts directory using nano editor.
+
+12
+cd ~/scripts
+nano find_error.py
+Completed Script
+The Python code you wrote is designed to search a log file for user-specified errors. It prompts the user to enter the error message, then iterates through each line of the log file, checking for matches against the specified error pattern. If a match is found, the line is added to a list of found errors. Once the search is complete, the found errors are written to a separate output file for further analysis. The script uses regular expressions for pattern matching and provides flexibility in defining error patterns.
+
+
+#!/usr/bin/env python3
+import sys
+import os
+import re
+
+
+def error_search(log_file):
+        error = input("What is the error?")
+        returned_errors = []
+        with open(log_file, mode='r',encoding='UTF-8') as file:
+
+Save the file by clicking Ctrl-o, followed by the Enter key and Ctrl-x.
+
+Make the file executable before running it.
+
+1
+sudp chmod +x find_error.py
+ Now, run the file by passing the path to fishy.log as a parameter to the script.
+
+1
+./find_error.py ~/data/fishy.log
+This script will now prompt for the type of error to be searched. Continue by entering the following type of error:
+
+1
+CRON ERROR Failed to start
+On successful execution, this will generate an errors_found.log file, where you will find all the ERROR logs based on your search. You can view the ERROR log using the command below:
+
+1
+cat ~/data/errors_found.log
+Output:
+
+1
+July 31 04:11:32 mycomputername CRON[51253]: ERROR: Failed to start CRON job due to script syntax error. Inform the CRON job owner!
+Congratulations!
+Congrats! You've written a script to search the log file for the exact error, and then output that error into a separate file for further analysis. As an IT specialist, this tool will be super helpful, allowing you to use Python scripting to filter out and analyze all types of logs.
+
+
+###########################################------------------------------------------------------
+
+
+Example exception handling
+Now that you have an understanding of try and except clauses, assert statements, and raising exceptions, consider the following code examples which use all of these concepts together.
+
+The basic structure of exception handling is as follows: 
+
+
+# File reading function with exception handling
+def read_file(filename):
+	try:
+		with open(filename, 'r') as f:
+			return f.read()
+	except FileNotFoundError:
+		return "File not found!"
+	finally:
+		print("Finished reading file.")
+Imagine you have a function that reads data from a file and then divides two numbers provided within that file. There are some faults in it that you can catch with exceptions.
+
+
+def faulty_read_and_divide(filename):
+	with open(filename, 'r') as file:
+		data = file.readlines()
+		num1 = int(data[0])
+		num2 = int(data[1])
+		return num1 / num2
+There are several potential issues here:
+
+The file might not exist, causing a FileNotFoundError.
+
+The file might not have enough lines of data, leading to an IndexError.
+
+The data in the file might not be convertible to integers, raising a ValueError.
+
+The second number might be zero, which would raise a ZeroDivisionError.
+
+To address these potential issues, you can add the appropriate exception handling illustrated below:
+
+def enhanced_read_and_divide(filename):
+	try:
+		with open(filename, 'r') as file:
+			data = file.readlines()
+       	 
+        # Ensure there are at least two lines in the file
+        if len(data) < 2:
+            raise ValueError("Not enough data in the file.")
+       	 
+        num1 = int(data[0])
+
+Now, the function enhanced_read_and_divide is equipped to handle potential exceptions gracefully, providing informative error messages to the caller. This way, the code will explain when it fails since you have identified potential fault zones such as when dealing with unpredictable inputs or file content.
+
+Notice how the exceptions are instantiated as objects (such as ValueError ve) that you can use to further diagnose the issue by printing them out.
+
+
+The errors should read:
+
+File-level issues:
+
+Value error: Not enough data in the file.
+
+Error: The file was not found.
+
+Data-level issues:
+
+Value error: invalid literal for int() with base 10: 'apple'
+
+Division error: The denominator is zero.
+
+
+#########################################-------------------------------------------------------
+
+Exemplar: Implementing unit testing
+Introduction
+In the previous lab, one of your IT coworkers retired and left a folder of scripts for you to use. One of the scripts, called emails.py, matched users to an email address and let you easily look them up! For the most part, the script worked great – you entered in an employee's name and their email was printed to the screen. But, for some employees, the output didn't look quite right. Your job was to add a test to reproduce the bug, make the necessary corrections, and verify that all the tests passed to make sure the script worked! Best of luck!
+
+This exemplar is a walkthrough of the previous Qwiklab activity, including detailed instructions and solutions. You may use this exemplar if you were unable to complete the lab and/or you need extra guidance in competing lab tasks. You may also refer to this exemplar to prepare for the graded quiz in this module.
+
+Prerequisites
+First, you need to find the .csv file called user_emails.csv, which contains user names and their respective email addresses within the data directory. Navigate to this directory using the following command:
+
+
+cd ~/data
+List the files using the following command:
+
+
+ls
+You should now see a file named user_emails.csv. To view the contents of the user_emails.csv file, enter the following command:
+
+
+cat user_emails.csv
+Output:
+
+Provides what users_emails.csv contains.  Contains last name, first name followed by student emails.
+Your IT coworker has also left a script named emails.py within the scripts directory.
+
+Use the following command to navigate to the scripts directory:
+
+
+cd ~/scripts
+Now list the contents within the scripts directory using the following command:
+
+
+ls
+Here, you will find the script named emails.py. This script aims to match users to their respective email addresses.
+
+You can view the file using the following command:
+
+cat  emails.py
+ 
+Output:
+
+Description of the output is provided below.
+This script consists of two functions: populate_dictionary(filename) and find_email(argv). The function populate_dictionary(filename) reads the user_emails.csv file and populates a dictionary with name/value pairs. The other function, find_emails(argv), searches the dictionary created in the previous function for the user name passed to the function as a parameter. It then returns the associated email address. This script accepts employee's first name and last name as command-line arguments and outputs their email address.
+
+The script accepts arguments through the command line. These arguments are stored in a list named sys.argv. The first element of this list, i.e. argv[0], is always the name of the file being executed. So the parameters, i.e., first name and last name, are then stored in argv[1] and argv[2] respectively.
+
+Let's test the script now.
+
+Since you know the contents of the user_emails.csv file, choose any name to be passed as a parameter, or you can use the following name:
+
+
+python3 emails.py Blossom Gill
+This will give you the email address associated with the Full Name passed as parameters. In this case, the name is Blossom Gill and the email ID associated with this name is blossom@abc.edu.
+
+
+blossom@abc.edu
+That was simple and straightforward. But this script has few bugs. In the next part of this lab, we will design some test cases and correct the bugs in the script.
+
+Introduction to test cases
+Writing a test encourages you to think through the script's design and goals before writing the code. This keeps you focused and lets you create better designs. If you learn how to easily test your scripts, you'll be able to create code that's better defined and cohesive.
+
+In this lab, we will write tests and correct bugs within the existing script.
+
+In this section, we will write a basic test case and see how it works. A test case is an individual unit of testing that checks for a specific response to a particular set of inputs.
+
+Use the following command to create a new file (in scripts directory) to write our test cases:
+
+
+nano ~/scripts/emails_test.py
+The file should now open in edit mode. This script's primary objective is to write test cases that correct bugs in the existing emails.py script. We will use the unittest package for this.
+
+Add the following shebang line and import the necessary packages:
+
+#!/usr/bin/env python3
+
+import unittest
+
+The unittest package supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from the reporting framework. This module also provides classes that make it simple to support these qualities for a set of tests.
+
+The following import statement allows a Python file to access the script from another Python file. In this case, we will import the function find_email, which is defined in the script emails.py.
+
+from emails import find_email
+
+Now let's create a class:
+
+class EmailsTest(unittest.TestCase):
+
+Classes are a way to bundle data and functionality together. Creating a new class creates a new type of object, which further allows new instances of that type to be made.
+
+Another important aspect of the unittest module is the test runner. A test runner is a component that orchestrates the execution of tests and provides the outcome to the user.
+
+A test case is created by subclassing unittest.TestCase. Let's write our first basic test case, test_basic.
+
+ def test_basic(self):
+
+    testcase = [None, "Bree", "Campbell"]
+
+    expected = "breee@abc.edu"
+
+    self.assertEqual(find_email(testcase), expected)
+
+if __name__ == '__main__':
+
+  unittest.main()
+
+Python code:
+
+
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+if __name__ == '__main__':
+  unittest.main()
+
+Here, variable testcase contains the parameters to be passed to the script emails.py. As we mentioned, the script file is the first element of input parameters through command line using argv. Since we already imported the function find_email() from emails.py earlier, we will pass None in place of the script file and call it later in the script. Adding to None, we will pass a first name and last name as parameters.
+
+The variable stores the expected value to be returned by emails.py. The method assertEqual passes the test case to the function find_email(), which we imported earlier from emails.py, and checks whether it generates the expected output.
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+We will run this file through the command line here. To do this, we will give the file permissions for execution.
+
+
+chmod +x emails_test.py
+Now, let's run our first test case using the following command:
+
+
+./emails_test.py
+The output shows the number of tests run and its associated output.
+
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+The test case passed. This was a basic test case to show how test cases with Python work. In the next section, we will write a few more test cases covering other possibilities.
+
+Test Case 1: Missing parameters
+Imagine a scenario where the user doesn't give either their first name or last name. What do you think the output would be in this case?
+
+Lets try this out. Choose any first or last name of your choice or use the following name to be passed to emails.py as a parameter:
+
+
+python3 emails.py Kirk
+Output:
+
+
+Traceback (most recent call last):
+  File "emails.py", line 30, in <module>
+    main()
+  File "emails.py", line 27, in main
+    print(find_email(sys.argv))
+  File "emails.py", line 20, in find_email
+    fullname = str(argv[1] + " " + argv[2])
+IndexError: list index out of range
+This now gives us an error. The script doesn't take just one parameter as input and so it produces an error.
+
+Let's now write a test case to handle this type of error. This test case should pass just the first name to the script.
+
+
+nano emails_test.py
+Add the test case test_one_name just after the first test case.
+
+Pro tip: Note down the name of the test cases. Knowing the names will be helpful in running individual tests.
+
+ def test_one_name(self):
+
+    testcase = [None, "John"]
+
+    expected = "Missing parameters"
+
+    self.assertEqual(find_email(testcase), expected)
+
+The file emails_test.py should now look like this:
+
+
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+class TestFile(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+  def test_one_name(self):
+    testcase = [None, "John"]
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now run the second test using the following command:
+
+
+./emails_test.py
+Another way to run a particular function within the script is to specify the class name and the function name you want to run. This helps us run individual tests without having to run all the test cases in the test script again.
+
+Output:
+
+
+.E
+======================================================================
+ERROR: test_one_name (__main__.TestFile)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./emails_test.py", line 15, in test_one_name
+    self.assertEqual(find_email(testcase), expected)
+  File "/home/student/scripts/emails.py", line 20, in find_email
+    fullname = str(argv[1] + " " + argv[2])
+IndexError: list index out of range
+
+The output shows the function that caused the error and the description related to the error. It returned IndexError, which is raised while attempting to access an index that's outside the bounds of a list. This error occurs because the script emails.py takes in two parameters, the first and last name. We need to handle this type of incomplete inputs within the script. We need to decide what the correct output should be. Let's say, in this case, your script should output "Missing parameter".
+
+Let's now fix the code. The last test case showed that the script fails if only one parameter is passed. We would now handle these types of incomplete inputs given to the script file emails.py.
+
+There are two ways to solve this issue:
+
+Use a try/except clause to handle IndexError.
+
+Check the length of input parameters before traversing the user_emails.csv file for the email address.
+
+You can use either of the above methods, but remember that test cases should pass and the script should return "Missing parameters" in this case.
+
+We will use the try/except clause here to solve this issue. Try/except blocks are used for exceptions and error handling. Since exceptions are detected during execution of a script/program, error handling in Python is done using exceptions that are caught in try blocks and handled in except blocks.
+
+Let's dive into how try/except blocks work:
+
+First, we execute the try clause.
+
+If no exception occurs, the except clause is ignored.
+
+If an exception occurs during the execution of the try clause, the rest of the try clause is then skipped.
+
+It then attempts to match the type with the exception named after the except keyword. If this matches, the except clause is executed. If it doesn't, the control is passed on to outer try statements. If no handler is found, it's an unhandled exception and the execution stops with an error message.
+
+A try statement may have more than one except clause to specify handlers for different exceptions. In our case, the exception error we need to handle is IndexError.
+
+Let's move forward by adding a try/except clause to the script emails.py.
+
+
+nano emails.py
+We will add the complete code block within the function find_email(argv), which is within the try block, and add an IndexError exception within the except block. This means that the execution will start normally with any number of parameters given to the script. If the function find_email(argv) receives the required number of parameters, it will return the email address. And if the function doesn't receive the required number of parameters, it will throw an IndexError exception and the except clause which handles IndexError exception would then execute.
+
+Add the body of the function find_emails(argv) within the try block and add an except block:
+
+def find_email(argv):
+
+  """ Return an email address based on the username given."""
+
+  # Create the username based on the command line input.
+
+  try:
+
+    fullname = str(argv[1] + " " + argv[2])
+
+    # Preprocess the data
+
+    email_dict = populate_dictionary('/home/<username>/data/user_emails.csv')
+
+    # Find and print the email
+
+    return email_dict.get(fullname.lower())
+
+  except IndexError:
+
+    return "Missing parameters"
+
+The complete file emails.py should now look like this:
+
+
+#!/usr/bin/env python3
+import sys
+import csv
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now run the test cases within the file email_test.py again:
+
+
+./emails_test.py
+You should now see that both the test cases ran successfully and an OK message appeared.
+
+
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+Test Case 2: Random email address
+Let's find some other edge cases. We'll search for an employee that doesn't exist. Can you expect the output the script would give? The expected output in such a case should be "No email address found". Let's see how the script reacts to this case by adding a test case in the file emails_test.py just after the second test case.
+
+Open the file emails_test.py.
+
+
+nano emails_test.py
+Add the following test case after the previous test case:
+
+ def test_two_name(self):
+
+    testcase = [None, "Roy","Cooper"]
+
+    expected = "No email address found"
+
+    self.assertEqual(find_email(testcase), expected)
+
+The file should now look like this:
+
+
+#!/usr/bin/env python3
+import unittest
+from emails import find_email
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+  def test_one_name(self):
+    testcase = [None, "John"]
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Run the test script using:
+
+1
+./emails_test.py
+The test case failed! This means the script doesn't output the message "No email address found" if we search for an employee that doesn't exist.
+
+
+Let's edit the script emails.py to return a message saying "No email address found" where users searched for don't exist.
+
+Can you guess the statement where the function find_email(argv) actually fetches the email address of the user? The method email_dict.get(full): does the job. This method fetches the email address from the list if found, and if not, it returns None.
+
+We need to add an if-else loop here, which will return the email address only if the method email_dict.get(username) returns a valid email address. If it doesn't, it will return the message "No email address found".
+
+To do this, edit the script file using:
+
+
+nano emails.py
+Locate the statement return email_dict.get(fullname.lower()): within the script under the function find_email(argv) and replace it with the following block of code:
+
+   if email_dict.get(fullname.lower()):
+
+      return email_dict.get(fullname.lower())
+
+    else:
+
+      return "No email address found"
+
+The file should now look like this:
+
+
+#!/usr/bin/env python3
+import csv
+import sys
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now, run the test case to check if the script still produces an error.
+
+python3 emails_test.py
+Since we've handled the IndexError exception, the test case should now pass.
+
+
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+You can also run the script emails.py by passing some random names (that aren't present in user_emails.csv) and check the output.
+
+python3 emails.py Roy Cooper
+Output:
+
+No email address found
+Congratulations!
+Congrats! You've successfully added tests to reproduce bugs, made the necessary corrections, and verified all tests pass to make sure the script works! Great job!
+
+
+
+####-----------------------------------------------------------------------------------------#######
+
+Introduction
+Imagine one of your IT coworkers just retired and left a folder of scripts for you to use. One of the scripts, called emails.py, matches users to an email address and lets us easily look them up! For the most part, the script works great — you enter in an employee's name and their email is printed to the screen. But, for some employees, the output doesn't look quite right. Your job is to add a test to reproduce the bug, make the necessary corrections, and verify that all the tests pass to make sure the script works! Best of luck!
+
+What you'll do
+In this lab, you will:
+
+Write a simple test to check for basic functionality
+Write a test to check for edge cases
+Correct code with a try/except statement
+You'll have 90 minutes to complete this lab.
+
+Disclaimer: For optimal performance and compatibility, it is recommended to use either Google Chrome or Mozilla Firefox browsers while accessing the labs.
+Start the lab
+You'll need to start the lab before you can access the materials. To do this, click the green “Start Lab” button at the top of the screen.
+
+Green "Start Lab" button
+
+After you click the “Start Lab” button, you will see a shell, where you will be performing further steps in the lab. You should have a shell like this:
+
+Screenshot of shell terminal CLI. CLI reads "student@864a6934570a: -$"
+
+Prerequisites
+First, you need to find the .csv file called user_emails.csv, which contains user names and their respective email addresses within the data directory. Navigate to this directory using the following command:
+
+cd ~/data
+
+List the files using the following command:
+
+ls
+
+You should now see a file named user_emails.csv. To view the contents of the user_emails.csv file, enter the following command:
+
+cat user_emails.csv
+
+Your IT coworker has also left a script named emails.py within the scripts directory.
+
+Use the following command to navigate to the scripts directory:
+
+cd ~/scripts
+
+Now list the contents within the scripts directory using the following command:
+
+ls
+
+Here, you will find the script named emails.py. This script aims to match users to their respective email addresses.
+
+You can view the file using the following command:
+
+cat emails.py
+
+This script consists of two functions: populate_dictionary(filename) and find_email(argv). The function populate_dictionary(filename) reads the user_emails.csv file and populates a dictionary with name/value pairs. The other function, find_emails(argv), searches the dictionary created in the previous function for the user name passed to the function as a parameter. It then returns the associated email address. This script accepts employee's first name and last name as command-line arguments and outputs their email address.
+
+The script accepts arguments through the command line. These arguments are stored in a list named sys.argv. The first element of this list, i.e. argv[0], is always the name of the file being executed. So the parameters, i.e., first name and last name, are then stored in argv[1] and argv[2] respectively.
+
+Let's test the script now.
+
+Since you know the contents of the user_emails.csv file, choose any name to be passed as a parameter, or you can use the following name:
+
+python3 emails.py Blossom Gill
+
+This will give you the email address associated with the Full Name passed as parameters. In this case, the name is Blossom Gill and the email ID associated with this name is blossom@abc.edu.
+
+blossom@abc.edu
+That was simple and straightforward. But this script has few bugs. In the next part of this lab, we will design some test cases and correct the bugs in the script.
+
+Introduction to test cases
+Writing a test encourages you to think through the script's design and goals before writing the code. This keeps you focused and lets you create better designs. If you learn how to easily test your scripts, you'll be able to create code that's better defined and cohesive.
+
+In this lab, we will write tests and correct bugs within the existing script.
+
+In this section, we will write a basic test case and see how it works. A test case is an individual unit of testing that checks for a specific response to a particular set of inputs.
+
+Use the following command to create a new file (in scripts directory) to write our test cases:
+
+nano ~/scripts/emails_test.py
+
+The file should now open in edit mode. This script's primary objective is to write test cases that correct bugs in the existing emails.py script. We will use the unittest package for this.
+
+Add the following shebang line and import the necessary packages:
+
+#!/usr/bin/env python3
+import unittest
+
+The package unittest supports test automation, sharing of setup and shutdown code for tests, aggregation of tests into collections, and independence of the tests from the reporting framework. This module also provides classes that make it simple to support these qualities for a set of tests.
+
+The following import statement allows a Python file to access the script from another Python file. In this case, we will import the function find_email, which is defined in the script emails.py.
+
+from emails import find_email
+
+Now let's create a class:
+
+class EmailsTest(unittest.TestCase):
+
+Classes are a way to bundle data and functionality together. Creating a new class creates a new type of object, which further allows new instances of that type to be made.
+
+Another important aspect of the unittest module is the test runner. A test runner is a component that orchestrates the execution of tests and provides the outcome to the user.
+
+A test case is created by subclassing unittest.TestCase. Let's write our first basic test case, test_basic.
+
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+if __name__ == '__main__':
+  unittest.main()
+
+Here, variable test case contains the parameters to be passed to the script emails.py. As we mentioned, the script file is the first element of input parameters through command line using argv. Since we already imported the function find_email from emails.py earlier, we will pass None in place of the script file and call it later in the script. Adding to None, we will pass a first name and last name as parameters.
+
+The variable stores the expected value to be returned by emails.py. The method assertEqual passes the test case to the function find_email, which we imported earlier from emails.py, and checks whether it generates the expected output.
+
+
+Chromebook users: Instructions for saving a file in the nano editor
+keyboard_arrow_right
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+We will run this file through the command line here. To do this, we will give the file permissions for execution.
+
+chmod +x emails_test.py
+
+Now, let's run our first test case using the following command:
+
+./emails_test.py
+
+The output shows the number of tests run and its associated output.
+
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+The test case passed. This was a basic test case to show how test cases with Python work. In the next section, we will write a few more test cases covering other possibilities.
+
+Test Case 1: Missing parameters
+Imagine a scenario where the user doesn't give either their first name or last name. What do you think the output would be in this case?
+
+Lets try this out. Choose any first or last name of your choice or use the following name to be passed to emails.py as a parameter:
+
+python3 emails.py Kirk
+
+Traceback (most recent call last):
+  File "emails.py", line 30, in <module>
+    main()
+  File "emails.py", line 27, in main
+    print(find_email(sys.argv))
+  File "emails.py", line 20, in find_email
+    fullname = str(argv[1] + " " + argv[2])
+IndexError: list index out of range
+This now gives us an error. The script doesn't take just one parameter as input and so it produces an error.
+
+Let's now write a test case to handle this type of error. This test case should pass just the first name to the script.
+
+nano emails_test.py
+
+Add the test case test_one_name just after the first test case.
+
+Pro tip: Note down the name of the test cases. Knowing the names will be helpful in running individual tests.
+
+  def test_one_name(self):
+    testcase = [None, "John"]
+    expected = "Missing parameters"
+    self.assertEqual(find_email(testcase), expected)
+
+The file emails_test.py should now look like this:
+
+#!/usr/bin/env python3
+
+import unittest
+from emails import find_email
+
+class TestFile(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_one_name(self):
+    testcase = [None, "John"]
+    expected = "Missing parameters"
+    self.assertEqual(find_email(testcase), expected)
+
+if __name__ == '__main__':
+  unittest.main()
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now run the second test using the following command:
+
+./emails_test.py
+
+Another way to run a particular function within the script is to specify the class name and the function name you want to run. This helps us run individual tests without having to run all the test cases in the test script again.
+
+This now returns the following output:
+
+.E
+======================================================================
+ERROR: test_one_name (__main__.TestFile)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./emails_test.py", line 15, in test_one_name
+    self.assertEqual(find_email(testcase), expected)
+  File "/home/student/scripts/emails.py", line 20, in find_email
+    fullname = str(argv[1] + " " + argv[2])
+IndexError: list index out of range
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+FAILED (errors=1)
+The output shows the function that caused the error and the description related to the error. It returned IndexError, which is raised while attempting to access an index that's outside the bounds of a list. This error occurs because the script emails.py takes in two parameters, the first and last name. We need to handle this type of incomplete inputs within the script. We need to decide what the correct output should be. Let's say, in this case, your script should output Missing parameter.
+
+Let's now fix the code. The last test case showed that the script fails if only one parameter is passed. We would now handle these types of incomplete inputs given to the script file emails.py.
+
+There are two ways to solve this issue:
+
+Use a try/except clause to handle IndexError.
+Check the length of input parameters before traversing the user_emails.csv file for the email address.
+You can use either of the above methods, but remember that test cases should pass and the script should return Missing parameters in this case.
+
+We will use the try/except clause here to solve this issue. Try/except blocks are used for exceptions and error handling. Since exceptions are detected during execution of a script/program, error handling in Python is done using exceptions that are caught in try blocks and handled in except blocks.
+
+Let's dive into how try/except blocks work:
+
+First, we execute the try clause.
+If no exception occurs, the except clause is ignored.
+If an exception occurs during the execution of the try clause, the rest of the try clause is then skipped.
+It then attempts to match the type with the exception named after the except keyword. If this matches, the except clause is executed. If it doesn't, the control is passed on to outer try statements. If no handler is found, it's an unhandled exception and the execution stops with an error message.
+A try statement may have more than one except clause to specify handlers for different exceptions. In our case, the exception error we need to handle is IndexError.
+
+Let's move forward by adding a try/except clause to the script emails.py.
+
+nano emails.py
+
+We will add the complete code block within the function find_email(argv), which is within the try block, and add an IndexError exception within the except block. This means that the execution will start normally with any number of parameters given to the script. If the function find_email(argv) receives the required number of parameters, it will return the email address. And if the function doesn't receive the required number of parameters, it will throw an IndexError exception and the except clause which handles IndexError exception would then execute.
+
+Add the body of the function find_emails(argv) within the try block and add an except block:
+
+def find_email(argv):
+  """ Return an email address based on the username given."""
+  # Create the username based on the command line input.
+  try:
+    fullname = str(argv[1] + " " + argv[2])
+    # Preprocess the data
+    email_dict = populate_dictionary('/home/student/data/user_emails.csv')
+    # Find and print the email
+    return email_dict.get(fullname.lower())
+  except IndexError:
+    return "Missing parameters"
+
+The complete file emails.py should now look like this:
+
+#!/usr/bin/env python3
+
+
+import sys
+import csv
+
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+      email_dict[name] = row[1]
+  return email_dict
+
+def find_email(argv):
+  """ Return an email address based on the username given."""
+  # Create the username based on the command line input.
+  try:
+    fullname = str(argv[1] + " " + argv[2])
+    # Preprocess the data
+    email_dict = populate_dictionary('/home/student/data/user_emails.csv')
+    # Find and print the email
+    return email_dict.get(fullname.lower())
+  except IndexError:
+    return "Missing parameters"
+
+def main():
+  print(find_email(sys.argv))
+
+if __name__ == "__main__":
+  main()
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now run the test cases within the file email_test.py again:
+
+./emails_test.py
+
+You should now see that both the test cases ran successfully and an OK message appeared.
+
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+Click Check my progress to verify the objective.
+Test case 1: Missing parameters
+
+
+Congrats! You've just handled a test case within the script.
+
+Test Case 2: Random email address
+Let's find some other edge cases. We'll search for an employee that doesn't exist. Can you expect the output the script would give? The expected output in such a case should be No email address found. Let's see how the script reacts to this case by adding a test case in the file emails_test.py just after the second test case.
+
+Open the file emails_test.py.
+
+nano emails_test.py
+
+Add the following test case after the previous test case:
+
+  def test_two_name(self):
+    testcase = [None, "Roy", "Cooper"]
+    expected = "No email address found"
+    self.assertEqual(find_email(testcase), expected)
+
+The file should now look like this:
+
+#!/usr/bin/env python3
+
+
+import unittest
+from emails import find_email
+
+class EmailsTest(unittest.TestCase):
+  def test_basic(self):
+    testcase = [None, "Bree", "Campbell"]
+    expected = "breee@abc.edu"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_one_name(self):
+    testcase = [None, "John"]
+    expected = "Missing parameters"
+    self.assertEqual(find_email(testcase), expected)
+
+  def test_two_name(self):
+    testcase = [None, "Roy", "Cooper"]
+    expected = "No email address found"
+    self.assertEqual(find_email(testcase), expected)
+
+if __name__ == '__main__':
+  unittest.main()
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Run the test script using:
+
+./emails_test.py
+
+The test case failed! This means the script doesn't output the message No email address found if we search for an employee that doesn't exist.
+
+Let's edit the script emails.py to return a message saying No email address found where users searched for don't exist.
+
+Can you guess the statement where the function find_email(argv) actually fetches the email address of the user? The method email_dict.get(full): does the job. This method fetches the email address from the list if found, and if not, it returns None.
+
+We need to add an if-else loop here, which will return the email address only if the method email_dict.get(username) returns a valid email address. If it doesn't, it will return the message No email address found.
+
+To do this, edit the script file using:
+
+nano emails.py
+
+Locate the statement return email_dict.get(fullname.lower()): within the script under the function find_email(argv) and replace it with the following block of code:
+
+    if email_dict.get(fullname.lower()):
+      return email_dict.get(fullname.lower())
+    else:
+      return "No email address found"
+
+The file should now look like this:
+
+#!/usr/bin/env python3
+
+import csv
+import sys
+
+def populate_dictionary(filename):
+  """Populate a dictionary with name/email pairs for easy lookup."""
+  email_dict = {}
+  with open(filename) as csvfile:
+    lines = csv.reader(csvfile, delimiter = ',')
+    for row in lines:
+      name = str(row[0].lower())
+      email_dict[name] = row[1]
+  return email_dict
+
+def find_email(argv):
+  """ Return an email address based on the username given."""
+  # Create the username based on the command line input.
+  try:
+    fullname = str(argv[1] + " " + argv[2])
+    # Preprocess the data
+    email_dict = populate_dictionary('/home/student/data/user_emails.csv')
+     # If email exists, print it
+    if email_dict.get(fullname.lower()):
+      return email_dict.get(fullname.lower())
+    else:
+      return "No email address found"
+  except IndexError:
+    return "Missing parameters"
+
+def main():
+  print(find_email(sys.argv))
+
+if __name__ == "__main__":
+  main()
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Now, run the test case to check if the script still produces an error.
+
+python3 emails_test.py
+
+Since we've handled the IndexError exception, the test case should now pass.
+
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK
+You can also run the script emails.py by passing some random names (that aren't present in user_emails.csv) and check the output.
+
+python3 emails.py Roy Cooper
+
+This should now give the following output:
+
+No email address found
+
+
+
+
+#############-----------------------------------------------------#####################
+
+Exemplar: Edit files using substrings
+Introduction
+You changed the username of your coworker Jane Doe from "jane" to "jdoe" in compliance with company's naming policy. The username change had already been done. However, some files that were named with Jane's previous username "jane" haven't been updated yet. To help with this, you wrote a bash script and a Python script that took care of the necessary rename operations.
+
+This exemplar is a walkthrough of the previous Qwiklab activity, including detailed instructions and solutions. You may use this exemplar if you were unable to complete the lab and/or you need extra guidance in competing lab tasks. You may also refer to this exemplar to prepare for the graded quiz in this module.
+
+Prerequisites
+For this lab, you should have a sound knowledge of these Linux commands:
+
+cat
+
+grep
+
+cut
+
+cat: the cat command allows us to create single or multiple files, view the contents of a file, concatenate files, and redirect output in terminal or other files.
+
+Syntax: 
+
+cat [file]
+
+grep: the grep command, which stands for "global regular expression print", processes text line-by-line and prints any lines that match a specified pattern.
+
+Syntax:
+
+grep [pattern] [file-directory]
+
+Here, [file-directory] is the path to the directory/folder where you want to perform a search operation. The grep command is also used to search text and match a string or pattern within a file.
+
+Syntax:
+
+grep [pattern] [file-location]
+
+cut: the cut command extracts a given number of characters or columns from a file. A delimiter is a character or set of characters that separate text strings.
+
+Syntax:
+
+cut [options] [file]
+
+For delimiter separated fields, the -d option is used. The -f option specifies the field, a set of fields, or a range of fields to be extracted.
+
+Syntax:
+
+cut -d [delimiter] -f [field number]
+
+Linux I/O Redirection
+Redirection is defined as switching standard streams of data from either a user-specified source or user-specified destination. Here are the following streams used in I/O redirection:
+
+Redirection into a file using >
+
+Append using >>
+
+Redirection into a file
+Each stream uses redirection commands. A single greater than sign (>) or a double greater than sign (>>) can be used to redirect standard output. If the target file doesn't exist, a new file with the same name will be created.
+
+Commands with a single greater than sign (>) overwrite existing file content.
+
+cat > [file]
+
+Commands with a double greater than sign (>>) do not overwrite the existing file content, but it will append to it.
+
+cat >> [file]
+
+So, rather than creating a file, the >> command is used to append a word or string to the existing file.
+
+The Scenario
+Your coworker Jane Doe currently has the username "jane" but she needs to it to "jdoe" to comply with your company's naming policy. This username change has already been done. However, some files that were named with Jane's previous username "jane" haven't been updated. For example, jane_profile_07272018.doc needs to be updated to jdoe_profile_07272018.doc.
+
+Navigate to data directory by using the following command:
+
+
+ls data
+You can list the contents of the directory using the ls command. This directory contains a file named list.txt. You will also find some other files within this directory.
+
+To view the contents of the file, use the following command:
+
+
+cat ~/data/list.txt
+Output:
+
+
+001 jane /data/jane_profile_07272018.doc
+002 kwood /data/kwood_profile_04022017.doc
+003 pchow /data/pchow_profile_05152019.doc
+004 janez /data/janez_profile_11042019.doc
+005 jane /data/jane_pic_07282018.jpg
+006 kwood /data/kwood_pic_04032017.jpg
+007 pchow /data/pchow_pic_05162019.jpg
+008 jane /data/jane_contact_07292018.csv
+009 kwood /data/kwood_contact_04042017.csv
+010 pchow /data/pchow_contact_05172019.csv
+This file contains three columns: line number, username, and full path to the file.
+
+Let's try out the commands we learned in the previous section to catch all the jane lines.
+
+
+grep 'jane' ~/data/list.txt
+This returns all the files with the pattern "jane". It also matches the file that has string "janez" within it.
+
+Output:
+
+
+001 jane /data/jane_profile_07272018.doc
+004 janez /data/janez_profile_11042019.doc
+005 jane /data/jane_pic_07282018.jpg
+008 jane /data/jane_contact_07292018.csv
+Now, we'll list only the files containing the string jane and not include janez.
+
+1
+grep ' jane ' ~/data/list.txt
+This now returns only files containing the string "jane".
+
+Output:
+
+
+001 jane /data/jane_profile_07272018.doc
+005 jane /data/jane_pic_07282018.jpg
+008 jane /data/jane_contact_07292018.csv
+Next, we'll use the cut command with grep command. For cut command, we'll use the whitespace character (' ') as a delimiter (denoted by -d) since the text strings are separated by spaces within the list.txt file. We'll also fetch results by specifying the fields using -f option.
+
+Let's fetch the different fields (columns) using -f flag :
+
+1
+grep " jane " ~/data/list.txt | cut -d ' ' -f 1
+Output:
+
+123
+001
+005
+008
+1
+grep " jane " ~/data/list.txt | cut -d ' ' -f 2
+Output:
+
+
+jane
+jane
+jane
+1
+grep " jane " ~/data/list.txt | cut -d ' ' -f 3
+Output:
+
+
+/data/jane_profile_07272018.doc
+/data/jane_pic_07282018.jpg
+/data/jane_contact_07292018.csv
+You can also return a range of fields together by using:
+
+
+grep " jane " ~/data/list.txt | cut -d ' ' -f 1-3
+To return a set of fields together:
+
+
+grep " jane " ~/data/list.txt | cut -d ' ' -f 1,3
+Test command
+We'll now use the test command to test for the presence of a file. The command test is a command-line utility on Unix-like operating systems that evaluates conditional expressions.
+
+The syntax for this command is:
+
+test EXPRESSION
+
+We'll use this command to check if a particular file is present in the file system. We do this by using the -e flag. This flag takes a filename as a parameter and returns True if the file exists.
+
+We'll check the existence of a file named jane_profile_07272018.doc using the following command:
+
+1
+if test -e ~/data/jane_profile_07272018.doc; then echo "File exists"; else echo "File doesn't exist"; fi
+Output:
+
+1
+File exists
+Create a file using a Redirection operator
+We'll now use the redirection operator (>) to create an empty file simply by specifying the file name. The syntax for this is:
+
+> [file-name]
+
+Let's create a file named test.txt using the redirection operator and use ls command to list the files.
+
+1
+> test.txt
+Output:
+
+1
+data  scripts  test.txt
+To append any string to the test.txt file, you can use another redirection operator (>>).
+
+1
+echo "I am appending text to this test file" >> test.txt
+You can view the contents of the file at any time by using the cat command.
+
+1
+cat test.txt
+Output:
+
+1
+I am appending text to this test file
+Iteration
+Another important aspect of a scripting language is iteration. Iteration, in simple terms, is the repetition of a specific set of instructions. It's when a set of instructions is repeated a number of times or until a condition is met. And for this process, bash script allows three different iterative statements:
+
+for: A for loop repeats the execution of a group of statements over a set of items.
+
+while: A while loop executes a set of instructions as long as the control condition remains true.
+
+until: An until loop executes a set of instructions as long as the control condition remains false.
+
+Let's now iterate over a set of items and print those items.
+
+
+for i in 1 2 3; do echo $i; done
+Output:
+
+
+1
+2
+3
+Find files using bash script
+In this section, you are going to write a script named findJane.sh within the scripts directory.
+
+This script should catch all jane lines and store them in another text file called oldFiles.txt. You will complete the script using the command we practiced in earlier sections. Don't worry, we'll guide you throughout the whole process.
+
+Navigate to /scripts directory and create a new file named findJane.sh.
+
+
+cd ~/scripts
+nano findJane.sh
+Now, add the shebang line.
+
+#!/bin/bash
+
+Create the text file oldFiles.txt and make sure it's empty. This oldFiles.txt file should save files with username jane.
+
+> oldFiles.txt
+
+
+#!/bin/bash
+> oldFiles.txt
+files=$(grep " jane " ../data/list.txt | cut -d ' ' -f 3);
+for file in $files; do
+    if test -e "..${file}"; then echo "..${file}" >> oldFiles.txt; fi
+done
+
+Now, search for all lines that contain the name jane and save the file names into a variable. Let's call this variable files, we will refer to it with that name later in the lab.
+
+Since none of the files present in the file list.txt are available in the file system, check if file names present in files variable are actually present in the file system. To do this, we'll use the test command that we practiced in the previous section.
+
+Now, iterate over the files variable and add a test expression within the loop. If the item within the files variable passes the test, add/append it to the file oldFiles.txt.
+
+Once you have completed writing the bash script, save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Make the file executable using the following command:
+
+1
+chmod +x findJane.sh
+Run the bash script findJane.sh.
+
+1
+./findJane.sh
+This will generate a new file named oldFiles.txt, which consists of all the files containing the name jane.
+
+Use the cat command followed by the file name to view the contents of the newly generated file.
+
+1
+cat oldFiles.txt
+Output:
+
+12
+/home/student/data/jane_profile_07272018.doc
+/home/student/data/jane_contact_07292018.csv
+Rename files using Python script
+In this section, you are going to write a Python script, changeJane.py, that takes oldFiles.txt as a command line argument and then renames files with the new username jdoe. You will be completing the script, but we will guide throughout the section.
+
+Create a Python script changeJane.py under /scripts directory using nano editor.
+
+1
+nano changeJane.py
+Add the shebang line.
+
+#!/usr/bin/env python3
+
+Now, import the necessary Python module to use in the Python script.
+
+import sys
+
+import subprocess
+
+The sys (System-specific parameters and functions) module provides access to some variables used or maintained by the interpreter and to functions that interact with the interpreter. The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and get their return codes.
+
+Continue writing the script to achieve the goal!
+
+Since oldFiles.txt is passed as a command line argument, it's stored in the variable sys.argv[1]. Open the file from the first argument to read its contents using open() method. You can either assign it to a variable or use a with block. Hint: traverse each line in the file using readlines() method. Use line.strip() to remove any whitespaces or newlines and fetch the old name.
+
+Once you have the old name, use replace() function to replace jane with jdoe. This method replaces occurrences of any older substring with the new substring. The old and new substrings are passed as parameters to the function. Therefore, it returns a string where all occurrences of the old substring is replaced with the new substring.
+
+Syntax:
+
+string.replace(old_substring, new_substring)
+
+Now, invoke a subprocess by calling run() function. This function takes arguments used to launch the process. These arguments may be a list or a string.
+
+In this case, you should pass a list consisting of the command to be executed, followed by arguments to the command.
+
+Use the mv command to rename the files in the file system. This command moves a file or directory. It takes in source file/directory and destination file/directory as parameters. We'll move the file with old name to the same directory but with a new name.
+
+Syntax:
+
+mv source destination
+
+Now it must be clear. You should pass a list consisting of the mv command, followed by the variable storing the old name and new name respectively to the run() function within the subprocess module.
+
+Close the file that was opened at the beginning.
+
+f.close()
+
+
+#!/usr/bin/env python3
+import sys
+import subprocess
+with open(sys.argv[1]) as file:
+    lines = file.readlines()
+    for line in lines:
+        oldvalue = line.strip()
+        newvalue = oldvalue.replace("jane", "jdoe")
+        subprocess.run(["mv", oldvalue, newvalue])
+file.close()
+
+Once you have completed writing the bash script, save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Make the file executable using the following command:
+
+1
+chmod +x changeJane.py
+Run the script and pass the file oldFiles.txt as a command line argument.
+
+1
+./changeJane.py oldFiles.txt
+Navigate to the /data directory and use the ls command to view renamed files.
+
+123
+cd ~/data
+ls
+
+Output:
+
+12
+janez_profile_11042019.doc  jdoe_profile_07272018.doc  kwood_profile_04022017.doc  pchow_pic_05162019.jpg
+jdoe_contact_07292018.csv   kwood_pic_04032017.jpg     list.txt
+Congratulations!
+Congrats! You've successfully renamed files containing jane with jdoe and we bet you're feeling much more comfortable performing operations using cat, grep, cut, and I/O stream commands. On top of that, you now know how to use conditional statements and iteration through bash scripts. Working with bash and Python scripting simultaneously will be super helpful throughout your IT specialist career. Great job completing this lab!
+
+
+
+
+###########-------------------------------------------################
+
+IT skills in action reading
+Congratulations! You have gained so much knowledge about using Python to interact with your operating system. There are many technical pieces that are included while using regexes in your code, but how would you apply the skills you learned in a professional setting?
+
+In this reading, you will review an example of how regular expressions are used in the real world.
+
+Disclaimer: The following scenario is based on a fictitious company called LogicLink Innovations.
+
+Time is ticking
+Dakota is a fairly new programmer with his company. He just earned a spot on the project for LogicLink Innovations. This is one of the biggest and most credible companies in the industry, so Dakota knows he has to excel on this project to help make a name for himself. LogicLink Innovations manages customer data and has hundreds of customer phone numbers in its database. The phone numbers are in inconsistent formats. Some are written with dashes, some in parentheses with spaces, and some are just digits. Dakota sees this:
+
+123-456-7890
+
+(123) 456-7890
+
+1234567890
+
+
+Dakota is assigned to take the dataset containing phone numbers and organize the formatting so they are all consistent. His manager tells him they need it by the end of the week! There is no way Dakota can work through and edit hundreds of phone numbers. There has to be another way.
+
+Search and replace
+Dakota remembers reading about how other programmers use regular expressions to make their coding life easier. He knows there has to be one that can help him with his dilemma. This can’t be the first time a programmer needs to standardize numbers! He decides to craft a regular expression that captures three groups of digits, each of which might be surrounded by non-digit characters.
+
+
+Using a regex tool and the sample data from above, he eventually comes up with a regex that matches all three samples:
+
+^\D*(\d{3})\D*(\d{3})\D*(\d{4})$
+
+
+Let’s break down this line of code, piece by piece:
+
+^\D*
+
+This part of the code matches zero or more non-digit characters at the beginning of the string.
+
+(\d{3})
+
+This part of the code captures exactly three digits, which represent the area code.
+
+\D*
+
+This part of the code matches zero or more non-digit characters between the area code and exchange.
+
+(\d{3} ) 
+
+This part of the code captures the three-digit exchange.
+
+\D*       
+
+This part of the code matches zero or more non-digit characters between the exchange and line.
+
+(\d{4})$
+
+This part of the code captures exactly four digits at the end of the string.
+
+    
+
+Now he has three capture groups: area code, exchange, and number. He then substitutes those groups into a new string using backreferences:
+
+(\1) \2-\3
+
+
+This puts all of the phone numbers into a uniform format.
+
+
+This regular expression helps Dakota by searching for phone numbers in different formats and replacing them to match the format that Dakota’s manager needs: (123) 456-7890. Dakota begins to code.
+
+
+He writes up a simple Python script to read the dataset from a file and output the corrected phone numbers using his regular expressions:
+
+import re
+
+
+with open("data/phones.csv", "r") as phones:
+
+ for phone in phones:
+
+   new_phone = re.sub(r"^\D*(\d{3})\D*(\d{3})\D*(\d{4})$", r"(\1) \2-\3", phone)
+
+   print(new_phone)
+
+(123) 456-7890
+
+(123) 456-7890
+
+(123) 456-7890
+
+
+Success! Dakota gets the project done in a single day and is now the office hero. 
+
+A happy client
+By using a regular expression, Dakota expedited the process of collecting, organizing, and providing LogicLink Innovation with its customers’ phone numbers, all in the same format. 
+
+
+
+
+
+##############-----------------------------------########################
+
+
+
+Exemplar: Log analysis using regular expressions
+Introduction
+In the previous lab, your company used a server that runs a service called ticky, an internal ticketing system. The service logs events to syslog, both when it runs successfully and when it encounters errors.
+
+The service's developers needed your help getting some information from those logs so that they could better understand how their software was used and how to improve it. So, for this lab, you wrote some automation scripts that processed the system log and generated reports based on the information extracted from the log files.
+
+This exemplar is a walkthrough of the previous Qwiklab activity, including detailed instructions and solutions. You may use this exemplar if you were unable to complete the lab and/or you need extra guidance in competing lab tasks. You may also refer to this exemplar to prepare for the graded quiz in this module.
+
+Exercise - 1
+We'll be working with a log file named syslog.log, which contains logs related to ticky.
+
+You can view this file using:
+
+1
+cat syslog.log
+ The log lines follow a pattern similar to the ones we've seen before. Something like this:
+
+May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username)
+
+Jun 1 11:06:48 ubuntu.local ticky: ERROR: Connection to DB failed (username)
+
+When the service runs correctly, it logs an INFO message to syslog. It then states what it did and states the username and ticket number related to the event. If the service encounters a problem, it logs an ERROR message to syslog. This error message indicates what was wrong and states the username that triggered the action that caused the problem.
+
+In this section, we'll search and view different types of error messages. The error messages for ticky details the problems with the file with a timestamp for when each problem occurred.
+
+These are a few kinds of listed error:
+
+Timeout while retrieving information
+
+The ticket was modified while updating
+
+Connection to DB failed
+
+Tried to add information to a closed ticket
+
+Permission denied while closing ticket
+
+Ticket doesn't exist
+
+To grep all the logs from ticky, use the following command:
+
+1
+grep ticky syslog.log
+Output:
+
+12345678910
+Jan 31 00:09:39 ubuntu.local ticky: INFO Created ticket [#4217] (mdouglas)
+Jan 31 00:16:25 ubuntu.local ticky: INFO Closed ticket [#1754] (noel)
+Jan 31 00:21:30 ubuntu.local ticky: ERROR The ticket was modified while updating (breee)
+Jan 31 00:44:34 ubuntu.local ticky: ERROR Permission denied while closing ticket (ac)
+Jan 31 01:00:50 ubuntu.local ticky: INFO Commented on ticket [#4709] (blossom)
+Jan 31 01:29:16 ubuntu.local ticky: INFO Commented on ticket [#6518] (rr.robinson)
+Jan 31 01:33:12 ub
+In order to search all the ERROR logs, use the following command:
+
+1
+grep "ERROR" syslog.log
+Output:
+
+12345678910
+Jan 31 00:21:30 ubuntu.local ticky: ERROR The ticket was modified while updating (breee)
+Jan 31 00:44:34 ubuntu.local ticky: ERROR Permission denied while closing ticket (ac)
+Jan 31 01:33:12 ubuntu.local ticky: ERROR Tried to add information to closed ticket (mcintosh)
+Jan 31 01:43:10 ubuntu.local ticky: ERROR Tried to add information to closed ticket (jackowens)
+Jan 31 01:49:29 ubuntu.local ticky: ERROR Tried to add information to closed ticket (mdouglas)
+Jan 31 02:30:04 ubuntu.local ticky: ERR
+To enlist all the ERROR messages of specific kind use the below syntax.
+
+Syntax: grep ERROR [message] [file-name]
+
+1
+grep "ERROR Tried to add information to closed ticket" syslog.log
+Output:
+
+12345678
+Jan 31 01:33:12 ubuntu.local ticky: ERROR Tried to add information to closed ticket (mcintosh)
+Jan 31 01:43:10 ubuntu.local ticky: ERROR Tried to add information to closed ticket (jackowens)
+Jan 31 01:49:29 ubuntu.local ticky: ERROR Tried to add information to closed ticket (mdouglas)
+Jan 31 04:31:49 ubuntu.local ticky: ERROR Tried to add information to closed ticket (oren)
+Jan 31 05:12:39 ubuntu.local ticky: ERROR Tried to add information to closed ticket (oren)
+Jan 31 05:18:45 ubuntu.local tic
+Let's now write a few regular expressions using a python3 interpreter.
+
+We can also grep the ERROR/INFO messages in a pythonic way using a regular expression. Let's now write a few regular expressions using a python3 interpreter.
+
+Open Python shell using the command below:
+
+1
+python3
+This opens a Shell. Python provides a Python Shell (also known as Python Interactive Shell), which is used to execute a single Python command and get the result.
+
+Import the regular expression module (re).
+
+12
+import re
+line = "May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username)"
+ To match a string stored in line variable, we use the search() method by defining a pattern.
+
+1
+re.search(r"ticky: INFO: ([\w ]*) ", line)
+Output:
+
+1
+<re.Match object; span=(29, 56), match='ticky: INFO Created ticket '>
+You can also get the ERROR message as we did for the INFO log above from the ERROR log line.
+
+1
+line = "May 27 11:45:40 ubuntu.local ticky: ERROR Error creating ticket [#1234] (username)"
+To match a string stored in a line variable, we use the search() method by defining a pattern.
+
+1
+re.search(r"ticky: ERROR ([\w ]*) ", line)
+Output:
+
+1
+<re.Match object; span=(29, 64), match='ticky: ERROR Error creating ticket '>
+Now that you know how to use regular expressions with Python, start fetching logs of ticky for a specific username. We'll need them in later sections.
+
+Exercise - 2
+Now, use the Python interactive shell to create a dictionary.
+
+1
+fruit = {"oranges": 3, "apples": 5, "bananas": 7, "pears": 2}
+Call the sorted() function to sort the items in the dictionary.
+
+1
+sorted(fruit.items())
+Output:
+
+1
+[('apples', 5), ('bananas', 7), ('oranges', 3), ('pears', 2)]
+We'll now sort the dictionary using the item's key. For this use the operator module.
+
+Pass the function itemgetter() as an argument to the sorted() function. Since the second element of tuple needs to be sorted, pass the argument 0 to the itemgetter() function of the operator module.
+
+12
+import operator
+sorted(fruit.items(), key=operator.itemgetter(0))
+Output:
+
+1
+[('apples', 5), ('bananas', 7), ('oranges', 3), ('pears', 2)]
+To sort a dictionary based on its values, pass the argument 1 to the itemgetter() function of the operator module.
+
+1
+sorted(fruit.items(), key=operator.itemgetter(1))
+Output:
+
+1
+[('pears', 2), ('oranges', 3), ('apples', 5), ('bananas', 7)]
+Finally, you can also reverse the order of the sort using the reverse parameter. This parameter takes in a boolean argument.
+
+To sort the fruit object from most to least occurrence, we pass the argument reverse=True.
+
+1
+sorted(fruit.items(), key = operator.itemgetter(1), reverse=True)
+Output:
+
+1
+[('bananas', 7), ('apples', 5), ('oranges', 3), ('pears', 2)]
+You can see the fruit object is now sorted from the most to the least number of occurrences.
+
+Great job practice these skills! You can further practice this by sorting the logs that you would fetch using regular expressions from the previous section.
+
+Exit the shell using exit().
+
+Exercise - 3
+We'll now work with a file named csv_to_html.py. This file converts the data in a CSV file into an HTML file that contains a table with the data. Let's practice this with an example file.
+
+Create a new CSV file.
+
+1
+nano user_emails.csv
+Add the following data into the file:
+
+123456789101112131415161718192021
+Full Name, Email Address
+Blossom Gill, blossom@abc.edu
+Hayes Delgado, nonummy@utnisia.com
+Petra Jones, ac@abc.edu
+Oleg Noel, noel@liberomauris.ca
+Ahmed Miller, ahmed.miller@nequenonquam.co.uk
+Macaulay Douglas, mdouglas@abc.edu
+Aurora Grant, enim.non@abc.edu
+Madison Mcintosh, mcintosh@nisiaenean.net
+Montana Powell, montanap@semmagna.org
+
+Save the file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Give executable permission to the script file csv_to_html.py.
+
+1
+sudo chmod +x csv_to_html.py
+To visualize the data in the user_emails.csv file, you have to generate a webpage that'll be served by the webserver running on the machine.
+
+The script csv_to_html.py takes in two arguments, the CSV file, and location that would host the HTML page generated. Give write permission to the directory that would host that HTML page:
+
+1
+sudo chmod o+w /var/www/html
+Next, run the script csv_to_html.py script by passing two arguments: user_emails.csv file and the path /var/www/html/. Also, append a name to the path with an HTML extension. This should be the name that you want the HTML file to be created with.
+
+1
+./csv_to_html.py user_emails.csv /var/www/html/<html-filename>.html
+Replace with the new name.
+
+Navigate to the /var/www/html directory. Here, you'll find an HTML file created with the filename you passed to the above script.
+
+1
+ls /var/www/html
+Now, to view this HTML page, open any web browser and enter the following URL in the search bar.
+
+Note: You can find the External IP address by clicking on the dashboard icon at the top of the page.
+
+[External IP address]/[html-filename].html
+
+Output:
+
+User Emails
+
+Full Name
+
+Email Address
+
+Blossom Gill
+
+blossom@abc.edu
+
+Hayes Delgado
+
+nomummy@utinisia.com
+
+Petra Jones
+
+ac@abc.edu
+
+Oleg Noel
+
+noel@liberomauris.ca
+
+Ahmed Miller
+
+ahmed.miller@nequenonquam.co.uk
+
+Macaulay Douglas
+
+mdouglas@abc.edu
+
+You should now be able to visualize the data within the user_emails.csv file on a web page.
+
+Generate reports
+Now, we're going to practice creating a script, named ticky_check.py, that generates two different reports from this internal ticketing system log file i.e., syslog.log. This script will create the following reports:
+
+The ranking of errors generated by the system: A list of all the error messages logged and how many times each error was found, sorted by the most common error to the least common error. This report doesn't take into account the users involved.
+
+The user usage statistics for the service: A list of all users that have used the system, including how many info messages and how many error messages they've generated. This report is sorted by username.
+
+To create these reports write a python script named ticky_check.py. Use nano editor for this.
+
+1
+nano ticky_check.py
+Add the shebang line.
+
+1
+#!/usr/bin/env python3
+Here's your challenge: Write a script to generate two different reports based on the ranking of errors generated by the system and the user usage statistics for the service. You'll write the script on your own, but we'll guide you throughout.
+
+First, import all the Python modules that you'll use in this Python script. After importing the necessary modules, initialize two dictionaries: one for the number of different error messages and another to count the number of entries for each user (splitting between INFO and ERROR).
+
+Now, parse through each log entry in the syslog.log file by iterating over the file.
+
+For each log entry, you'll have to first check if it matches the INFO or ERROR message formats. You should use regular expressions for this. When you get a successful match, add one to the corresponding value in the per_user dictionary. If you get an ERROR message, add one to the corresponding entry in the error dictionary by using proper data structure.
+
+After you've processed the log entries from the syslog.log file, you need to sort both the per_user and error dictionary before creating CSV report files.
+
+Keep in mind that:
+
+The error dictionary should be sorted by the number of errors from most common to least common.
+
+The user dictionary should be sorted by username.
+
+Insert column names as ("Error", "Count") at the zero index position of the sorted error dictionary. And insert column names as ("Username", "INFO", "ERROR") at the zero index position of the sorted per_user dictionary.
+
+After sorting these dictionaries, store them in two different files: error_message.csv and user_statistics.csv.
+
+Python code: 
+
+#!/usr/bin/env python3
+import sys
+import re
+import operator
+import csv
+
+# Dict: Count number of entries for each user
+per_user = {}  # Splitting between INFO and ERROR
+# Dict: Number of different error messages
+errors = {}
+
+# * Read file and create dictionaries
+with open('syslog.log') as file:
+    # read each line
+    for line in file.readlines():
+        # regex search
+        # * Sample Line of log file
+        # "May 27 11:45:40 ubuntu.local ticky: INFO: Created ticket [#1234] (username)"
+        match = re.search(
+            r"ticky: ([\w+]*):? ([\w' ]*)[\[[#0-9]*\]?]? ?\((.*)\)$", line)
+        code, error_msg, user = match.group(1), match.group(2), match.group(3)
+
+        # Populates error dict with ERROR messages from log file
+        if error_msg not in errors.keys():
+            errors[error_msg] = 1
+        else:
+            errors[error_msg] += 1
+        # Populates per_user dict with users and default values
+        if user not in per_user.keys():
+            per_user[user] = {}
+            per_user[user]['INFO'] = 0
+            per_user[user]['ERROR'] = 0
+        # Populates per_user dict with users logs entry
+        if code == 'INFO':
+            if user not in per_user.keys():
+                per_user[user] = {}
+                per_user[user]['INFO'] = 0
+            else:
+                per_user[user]["INFO"] += 1
+        elif code == 'ERROR':
+            if user not in per_user.keys():
+                per_user[user] = {}
+                per_user[user]['INFO'] = 0
+            else:
+                per_user[user]['ERROR'] += 1
+
+
+# Sorted by VALUE (Most common to least common)
+errors_list = sorted(errors.items(), key=operator.itemgetter(1), reverse=True)
+
+# Sorted by USERNAME
+per_user_list = sorted(per_user.items(), key=operator.itemgetter(0))
+
+file.close()
+# Insert at the beginning of the list
+errors_list.insert(0, ('Error', 'Count'))
+
+# * Create CSV file user_statistics
+with open('user_statistics.csv', 'w', newline='') as user_csv:
+    for key, value in per_user_list:
+        user_csv.write(str(key) + ',' +
+                       str(value['INFO']) + ',' + str(value['ERROR'])+'\n')
+
+# * Create CSV error_message
+with open('error_message.csv', 'w', newline='') as error_csv:
+    for key, value in errors_list:
+        error_csv.write(str(key) + ' ' + str(value))
+
+
+
+
+
+Save the ticky_check.py file by clicking Ctrl-o, Enter key, and Ctrl-x.
+
+Visualize reports
+First, give executable permission to the Python script ticky_check.py.
+
+1
+chmod +x ticky_check.py
+Run the ticky_check.py by using the following command:
+
+1
+./ticky_check.py
+Executing ticky_check.py will generate two report file error_message.csv and user_statistics.csv.
+
+You can now visualize the error_message.csv and user_statistics.csv by converting them to HTML pages. To do this, pass the files one by one to the script csv_to_html.py file, like we did in the previous section.
+
+To convert the error_message.csv into HTML file run the following command:
+
+1
+./csv_to_html.py error_message.csv /var/www/html/<html-filename>.html
+Replace with the name of your choice.
+
+To convert user_statistics.csv into HTML file, run the following command:
+
+1
+./csv_to_html.py user_statistics.csv /var/www/html/<html-filename>.html
+Replace with the new name
+
+Now, to view these HTML pages, open any web-browser and enter the following URL in the search bar.
+
+[External IP address]/[html-filename].html
+
+Output:
+
+Error Message
+
+Error
+
+Count
+
+Timeout while retrieving information
+
+15
+
+Connection to DB failed
+
+13
+
+Tried to add information to closed ticket
+
+12
+
+Permission denied while closing ticket
+
+10
+
+The ticket was modified while updating
+
+9
+
+Ticket doesn't exist
+
+7
+
+User Statistics 
+
+Username
+
+INFO
+
+ERROR
+
+ac
+
+2
+
+2
+
+ahmed.miller
+
+2
+
+4
+
+blossom
+
+2
+
+6
+
+bpacheco
+
+0
+
+2
+
+breee
+
+1
+
+5
+
+britanni
+
+1
+
+1
+
+enim.non
+
+2
+
+3
+
+flavia
+
+0
+
+5
+
+Congratulations!
+Congrats! You've successfully written some automation scripts that process the system log and generate a bunch of reports based on the information extracted from the log files. You have also hosted these reports on a webpage. As an IT specialist, this will help you to work with Python scripting to generate HTML tabular data for data visualization.
+
