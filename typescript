@@ -36,4 +36,127 @@ hello_world.py.save
 
 The most similar command is
 	remote
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kggit add .[?1l>[?2004l
+]2;git add .]1;gitwarning: adding embedded git repository: scripts
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> scripts
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached scripts
+hint: 
+hint: See "git help submodule" for more information.
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit rm --ch ached scripts[?1l>[?2004l
+]2;git rm --cached scripts]1;giterror: the following file has staged content different from both the
+file and the HEAD:
+    scripts
+(use -f to force removal)
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrm -rf scripts/.git[?1l>[?2004l
+]2;rm -rf scripts/.git]1;rm[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit rm -r --cached scripts -f[?1l>[?2004l
+]2;git rm -r --cached scripts -f]1;gitfatal: pathspec 'scripts' did not match any files
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrmr  sscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrm -rf scripts/.git[?1l>[?2004l
+]2;rm -rf scripts/.git]1;rm[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scriptszsh: command not found: scripts
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit rm --cached scripts[?1l>[?2004l
+]2;git rm --cached scripts]1;gitfatal: pathspec 'scripts' did not match any files
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit rm --cached cs  scripts[?1l>[?2004l
+]2;git rm --cached scripts]1;giterror: the following file has staged content different from both the
+file and the HEAD:
+    scripts
+(use -f to force removal)
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit rm -rf --cached scripts[?1l>[?2004l
+]2;git rm -rf --cached scripts]1;gitrm 'scripts'
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add scripts[?1l>[?2004l
+]2;git add scripts]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -M m "Remove submodule  [Kaand add c scripts as regular folder"[?1l>[?2004l
+]2;git commit -m "Remove submodule and add scripts as regular folder"]1;git[main e805929] Remove submodule and add scripts as regular folder
+ 2 files changed, 49 insertions(+)
+ create mode 100755 scripts/all_checks.py
+ create mode 100644 typescript
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push origin main[?1l>[?2004l
+]2;git push origin main]1;gitCounting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 1.49 KiB | 1.49 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/harrisoneanthony/scripting_practice.git
+   2ff8703..e805929  main -> main
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md              hosts.csv
+[1m[36m__pycache__[39;49m[0m            myamazingfile.txt
+areas.py               myapp.py
+by_department.csv      [1m[36mnew_dir[39;49m[0m
+[1m[36mcake_factory[39;49m[0m           new_file.txt
+[31mcapitalize.py[39;49m[0m          notes.txt
+[31mcapitalize_words.py[39;49m[0m    [1m[36mold_website[39;49m[0m
+charfreq.py            [31mparameters.py[39;49m[0m
+[31mcheck_cron.py[39;49m[0m          [31mrandom-exit.py[39;49m[0m
+[31mcheck_localhost.sh[39;49m[0m     [1m[36mrearrange[39;49m[0m
+cpu_usage.py           rearrange1.py
+[31mcreate_file.py[39;49m[0m         rearrange2.py
+csv_file.txt           [31mremove_copied.py[39;49m[0m
+disk_usage.diff        [31mretry.sh[39;49m[0m
+[31mdisk_usage.py[39;49m[0m          [1m[36mscripts[39;49m[0m
+[31mdisk_usage_fixed.py[39;49m[0m    [31mseconds.py[39;49m[0m
+disk_usage_original.py spider.txt
+error_file.txt         [31mstdout_example.py[39;49m[0m
+example                story.txt
+[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m
+[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m
+generate_report.py     syslog
+guests.txt             [31mtoploglines.sh[39;49m[0m
+haiku.txt              typescript
+[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m
+[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m
+[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m
+hello_world.py.save
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[1m/[0m[0m [?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -la[?1l>[?2004l
+]2;ls -G -la]1;lstotal 8
+drwxr-xr-x   3 harrison  staff    96 Apr 15 10:25 [1m[36m.[39;49m[0m
+drwxr-xr-x  58 harrison  staff  1856 Apr 15 10:28 [1m[36m..[39;49m[0m
+-rwxr-xr-x   1 harrison  staff   184 Apr 15 10:08 [31mall_checks.py[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -a[?1l>[?2004l
+]2;ls -G -a]1;ls[1m[36m.[39;49m[0m             [1m[36m..[39;49m[0m            [31mall_checks.py[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrm -0 rf scripts/.git[?1l>[?2004l
+]2;rm -rf scripts/.git]1;rm[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit  g  ggit add scripts[?1l>[?2004l
+]2;git add scripts]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit - m "Converted scripts [K  from git repo to regular directory"[?1l>[?2004l
+]2;git commit -m "Converted scripts from git repo to regular directory"]1;gitOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+	[31mmodified:   typescript[m
+
+no changes added to commit
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push origin main[?1l>[?2004l
+]2;git push origin main]1;gitEverything up-to-date
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls l  sscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -a[?1l>[?2004l
+]2;ls -G -a]1;ls[1m[36m.[39;49m[0m             [1m[36m..[39;49m[0m            [31mall_checks.py[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -a scripts/.git[?1l>[?2004l
+]2;ls -G -a scripts/.git]1;lsls: scripts/.git: No such file or directory
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h
