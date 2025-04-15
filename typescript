@@ -1,0 +1,39 @@
+Script started on Tue Apr 15 10:24:12 2025
+[oh-my-zsh] Would you like to update? [Y/n] n
+[oh-my-zsh] You can update manually by running `omz update`
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Ksscript    s  lls[?1l>[?2004l
+]2;ls -G]1;lsREADME.md              hosts.csv
+[1m[36m__pycache__[39;49m[0m            myamazingfile.txt
+areas.py               myapp.py
+by_department.csv      [1m[36mnew_dir[39;49m[0m
+[1m[36mcake_factory[39;49m[0m           new_file.txt
+[31mcapitalize.py[39;49m[0m          notes.txt
+[31mcapitalize_words.py[39;49m[0m    [1m[36mold_website[39;49m[0m
+charfreq.py            [31mparameters.py[39;49m[0m
+[31mcheck_cron.py[39;49m[0m          [31mrandom-exit.py[39;49m[0m
+[31mcheck_localhost.sh[39;49m[0m     [1m[36mrearrange[39;49m[0m
+cpu_usage.py           rearrange1.py
+[31mcreate_file.py[39;49m[0m         rearrange2.py
+csv_file.txt           [31mremove_copied.py[39;49m[0m
+disk_usage.diff        [31mretry.sh[39;49m[0m
+[31mdisk_usage.py[39;49m[0m          [1m[36mscripts[39;49m[0m
+[31mdisk_usage_fixed.py[39;49m[0m    [31mseconds.py[39;49m[0m
+disk_usage_original.py spider.txt
+error_file.txt         [31mstdout_example.py[39;49m[0m
+example                story.txt
+[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m
+[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m
+generate_report.py     syslog
+guests.txt             [31mtoploglines.sh[39;49m[0m
+haiku.txt              typescript
+[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m
+[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m
+[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m
+hello_world.py.save
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m)[00m [Kggit remove origin[?1l>[?2004l
+]2;git remove origin]1;gitgit: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmaster[34m)[00m [K[?1h=[?2004h
