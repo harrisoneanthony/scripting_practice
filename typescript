@@ -442,240 +442,380 @@ haiku.txt              [1m[36mvalidations[39;49m[0m
 [31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m
 [31mhello_world.py[39;49m[0m
 [1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano scrip     all_checks.py[1m [0m[0m [?1l>[?2004l
-]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 11 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[6;1Hdef check_reboot():[7;9H"""Returns True if the computer has a pending reboot."""[8;9Hreturn os.path.exist("/run/reboot-required")[9;1Hdef main():[10;9Hpass[12;1Hmain()[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[1;27H[7mFile: all_checks.py            Modified[27m[9;1H[K[10;1Hdef main(): [11;9Hpass[12;1H[K[13;1Hmain()[10;1H[11;1H[12;1H[11;13H[11;12H [11;12H[11;11H [11;11H[11;10H [11;10H[11;9H [11;9Hif[11;12Hcheck_reboot():[13;1H[K[14;1Hmain()[12;1H[12;9H[12;17Hprint("Pending[12;32HReboot.")[14;1H[K[15;1Hmain()[13;1H[13;9H[13;17Hsys.exit()[13;26H1)[13;27H[12;27H[11;27H[10;12H[9;1H[8;27H[7;27H[6;20H[5;1H[4;10H[6;1H[K[7;1Hdef check_reboot():[K[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[10;1H[K[11;1Hdef main():[K[12;9Hif check_reboot():[K[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;1H[K[16;1Hmain()[5;1Himport[5;8Hsys[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 15 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[5;11H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h.sh[39;49m[0m     [31mrandom-exit.py[39;49m[0m
-cpu_usage.py           [1m[36mrearrange[39;49m[0m
-[31mcreate_file.py[39;49m[0m         rearrange1.py
-csv_file.txt           rearrange2.py
-disk_usage.diff        [31mremove_copied.py[39;49m[0m
-[31mdisk_usage.py[39;49m[0m          [31mretry.sh[39;49m[0m
-[31mdisk_usage_fixed.py[39;49m[0m    [31mseconds.py[39;49m[0m
-disk_usage_original.py spider.txt
-error_file.txt         [31mstdout_example.py[39;49m[0m
-example                story.txt
-[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m
-[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m
-generate_report.py     syslog
-guests.txt             [31mtoploglines.sh[39;49m[0m
-haiku.txt              typescript
-[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m
-[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m
-[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hmmkdir scripts[?1l>[?2004l
-]2;mkdir scripts]1;mkdir[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hsscripts[?1l>[?2004l
-]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -a scripts\ /[?1l>[?2004l
-]2;ls -G -a scripts/]1;lsls: scripts/: No such file or directory
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts]2;harrison@Harrisons-MacBook-Pro]1;..ctice/scripts]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice/scripts\[0m[27m[24m[J[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd ..[?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hrrm -rf scripts/.git[?1l>[?2004l
-]2;rm -rf scripts/.git]1;rm[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -a[?1l>[?2004l
-]2;ls -G -a]1;ls[1m[36m.[39;49m[0m                      [31mhello_world.py[39;49m[0m
-[1m[36m..[39;49m[0m                     hello_world.py.save
-.DS_Store              hosts.csv
-[1m[36m.git[39;49m[0m                   myamazingfile.txt
-README.md              myapp.py
-[1m[36m__pycache__[39;49m[0m            [1m[36mnew_dir[39;49m[0m
-areas.py               new_file.txt
-by_department.csv      notes.txt
-[1m[36mcake_factory[39;49m[0m           [1m[36mold_website[39;49m[0m
-[31mcapitalize.py[39;49m[0m          [31mparameters.py[39;49m[0m
-[31mcapitalize_words.py[39;49m[0m    [31mrandom-exit.py[39;49m[0m
-charfreq.py            [1m[36mrearrange[39;49m[0m
-[31mcheck_cron.py[39;49m[0m          rearrange1.py
-[31mcheck_localhost.sh[39;49m[0m     rearrange2.py
-cpu_usage.py           [31mremove_copied.py[39;49m[0m
-[31mcreate_file.py[39;49m[0m         [31mretry.sh[39;49m[0m
-csv_file.txt           [1m[36mscripts[39;49m[0m
-disk_usage.diff        [31mseconds.py[39;49m[0m
-[31mdisk_usage.py[39;49m[0m          spider.txt
-[31mdisk_usage_fixed.py[39;49m[0m    [31mstdout_example.py[39;49m[0m
-disk_usage_original.py story.txt
-error_file.txt         [31mstreams.py[39;49m[0m
-example                [31mstreams_err.py[39;49m[0m
-[31mfruits.sh[39;49m[0m              syslog
-[31mgather-information.sh[39;49m[0m  [31mtoploglines.sh[39;49m[0m
-generate_report.py     typescript
-guests.txt             [1m[36mvalidations[39;49m[0m
-haiku.txt              [31mvariables.py[39;49m[0m
-[31mhealth_checks.py[39;49m[0m       [31mwhile.sh[39;49m[0m
-[31mhello.py[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsREADME.md              hello_world.py.save
-[1m[36m__pycache__[39;49m[0m            hosts.csv
-areas.py               myamazingfile.txt
-by_department.csv      myapp.py
-[1m[36mcake_factory[39;49m[0m           [1m[36mnew_dir[39;49m[0m
-[31mcapitalize.py[39;49m[0m          new_file.txt
-[31mcapitalize_words.py[39;49m[0m    notes.txt
-charfreq.py            [1m[36mold_website[39;49m[0m
-[31mcheck_cron.py[39;49m[0m          [31mparameters.py[39;49m[0m
-[31mcheck_localhost.sh[39;49m[0m     [31mrandom-exit.py[39;49m[0m
-cpu_usage.py           [1m[36mrearrange[39;49m[0m
-[31mcreate_file.py[39;49m[0m         rearrange1.py
-csv_file.txt           rearrange2.py
-disk_usage.diff        [31mremove_copied.py[39;49m[0m
-[31mdisk_usage.py[39;49m[0m          [31mretry.sh[39;49m[0m
-[31mdisk_usage_fixed.py[39;49m[0m    [31mseconds.py[39;49m[0m
-disk_usage_original.py spider.txt
-error_file.txt         [31mstdout_example.py[39;49m[0m
-example                story.txt
-[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m
-[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m
-generate_report.py     syslog
-guests.txt             [31mtoploglines.sh[39;49m[0m
-haiku.txt              typescript
-[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m
-[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m
-[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano all_checks.py[?1l>[?2004l
-]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;28H[7m[ New file ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[1;27H[7mFile: all_checks.py            Modified[27m[3;1H#!/usr/bin/env[3;16Hpython3[4;1Himport[4;8Hos[5;1H[6;1Hdef[6;5Hcheck_reboot():[7;1H[7;9H"""Returns[7;20HTrue[7;25Hif[7;28Hthe[7;32Hcomputer[7;41Hhas[7;45Ha[7;47Hpending[7;55Hreboot."""[8;1H[8;9Hreturn[8;16Hos.path.exist("/run/reboot-required")[9;1Hdef[9;5Hmain():[10;1H[10;9Hpass[11;1H[12;1Hmain()[13;1H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 11 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[13;1H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add .[?1l>[?2004l
-]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit " -m "add all_checks.py [K"[?1l>[?2004l
-]2;git commit -m "add all_checks.py"]1;git[main 5acfc52] add all_checks.py
- 2 files changed, 504 insertions(+), 99 deletions(-)
- rename scripts/all_checks.py => all_checks.py (99%)
- mode change 100755 => 100644
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push    status[?1l>[?2004l
-]2;git status]1;gitOn branch main
-Your branch is ahead of 'origin/main' by 1 commit.
-  (use "git push" to publish your local commits)
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   typescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push[?1l>[?2004l
-]2;git push]1;gitCounting objects: 4, done.
-Delta compression using up to 8 threads.
-Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
-Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 4.34 KiB | 4.34 MiB/s, done.
-Total 4 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
-To https://github.com/harrisoneanthony/scripting_practice.git
-   9d2c56e..5acfc52  main -> main
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
-]2;git status]1;gitOn branch main
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   typescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsREADME.md              hello_world.py.save
-[1m[36m__pycache__[39;49m[0m            hosts.csv
-all_checks.py          myamazingfile.txt
-areas.py               myapp.py
-by_department.csv      [1m[36mnew_dir[39;49m[0m
-[1m[36mcake_factory[39;49m[0m           new_file.txt
-[31mcapitalize.py[39;49m[0m          notes.txt
-[31mcapitalize_words.py[39;49m[0m    [1m[36mold_website[39;49m[0m
-charfreq.py            [31mparameters.py[39;49m[0m
-[31mcheck_cron.py[39;49m[0m          [31mrandom-exit.py[39;49m[0m
-[31mcheck_localhost.sh[39;49m[0m     [1m[36mrearrange[39;49m[0m
-cpu_usage.py           rearrange1.py
-[31mcreate_file.py[39;49m[0m         rearrange2.py
-csv_file.txt           [31mremove_copied.py[39;49m[0m
-disk_usage.diff        [31mretry.sh[39;49m[0m
-[31mdisk_usage.py[39;49m[0m          [31mseconds.py[39;49m[0m
-[31mdisk_usage_fixed.py[39;49m[0m    spider.txt
-disk_usage_original.py [31mstdout_example.py[39;49m[0m
-error_file.txt         story.txt
-example                [31mstreams.py[39;49m[0m
-[31mfruits.sh[39;49m[0m              [31mstreams_err.py[39;49m[0m
-[31mgather-information.sh[39;49m[0m  syslog
-generate_report.py     [31mtoploglines.sh[39;49m[0m
-guests.txt             typescript
-haiku.txt              [1m[36mvalidations[39;49m[0m
-[31mhealth_checks.py[39;49m[0m       [31mvariables.py[39;49m[0m
-[31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m
-[31mhello_world.py[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add all_checks.py[?1l>[?2004l
-]2;git add all_checks.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hl ggit status[?1l>[?2004l
-]2;git status]1;gitOn branch main
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   typescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hcchmod +x all_checks.py[?1l>[?2004l
-]2;chmod +x all_checks.py]1;chmod[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add a .[?1l>[?2004l
-]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push[?1l>[?2004l
-]2;git push]1;gitEverything up-to-date
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit config --b global core.editor  [K""nano"[?1l>[?2004l
-]2;git config --global core.editor "nano"]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit config[?1l>[?2004l
-]2;git config]1;gitusage: git config [<options>]
-
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-    -f, --file <file>     use given config file
-    --blob <blob-id>      read config from given blob object
-
-Action
-    --get                 get value: name [value-regex]
-    --get-all             get all values: key [value-regex]
-    --get-regexp          get values for regexp: name-regex [value-regex]
-    --get-urlmatch        get value specific for the URL: section[.var] URL
-    --replace-all         replace all matching variables: name value [value_regex]
-    --add                 add a new variable: name value
-    --unset               remove a variable: name [value-regex]
-    --unset-all           remove all matches: name [value-regex]
-    --rename-section      rename section: old-name new-name
-    --remove-section      remove a section: name
-    -l, --list            list all
-    -e, --edit            open an editor
-    --get-color           find the color configured: slot [default]
-    --get-colorbool       find the color setting: slot [stdout-is-tty]
-
-Type
-    --bool                value is "true" or "false"
-    --int                 value is decimal number
-    --bool-or-int         value is --bool or --int
-    --path                value is a path (file or directory name)
-
-Other
-    -z, --null            terminate values with NUL byte
-    --name-only           show variable names only
-    --includes            respect include directives on lookup
-    --show-origin         show origin of config (file, standard input, blob, command line)
-
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;lsREADME.md              hello_world.py.save
-[1m[36m__pycache__[39;49m[0m            hosts.csv
-[31mall_checks.py[39;49m[0m          myamazingfile.txt
-areas.py               myapp.py
-by_department.csv      [1m[36mnew_dir[39;49m[0m
-[1m[36mcake_factory[39;49m[0m           new_file.txt
-[31mcapitalize.py[39;49m[0m          notes.txt
-[31mcapitalize_words.py[39;49m[0m    [1m[36mold_website[39;49m[0m
-charfreq.py            [31mparameters.py[39;49m[0m
-[31mcheck_cron.py[39;49m[0m          [31mrandom-exit.py[39;49m[0m
-[31mcheck_localhost.sh[39;49m[0m     [1m[36mrearrange[39;49m[0m
-cpu_usage.py           rearrange1.py
-[31mcreate_file.py[39;49m[0m         rearrange2.py
-csv_file.txt           [31mremove_copied.py[39;49m[0m
-disk_usage.diff        [31mretry.sh[39;49m[0m
-[31mdisk_usage.py[39;49m[0m          [31mseconds.py[39;49m[0m
-[31mdisk_usage_fixed.py[39;49m[0m    spider.txt
-disk_usage_original.py [31mstdout_example.py[39;49m[0m
-error_file.txt         story.txt
-example                [31mstreams.py[39;49m[0m
-[31mfruits.sh[39;49m[0m              [31mstreams_err.py[39;49m[0m
-[31mgather-information.sh[39;49m[0m  syslog
-generate_report.py     [31mtoploglines.sh[39;49m[0m
-guests.txt             typescript
-haiku.txt              [1m[36mvalidations[39;49m[0m
-[31mhealth_checks.py[39;49m[0m       [31mvariables.py[39;49m[0m
-[31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m
-[31mhello_world.py[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano scrip     all_checks.py[1m [0m[0m [?1l>[?2004l
-]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 11 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[6;1Hdef check_reboot():[7;9H"""Returns True if the computer has a pending reboot."""[8;9Hreturn os.path.exist("/run/reboot-required")[9;1Hdef main():[10;9Hpass[12;1Hmain()[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[1;27H[7mFile: all_checks.py            Modified[27m[9;1H[K[10;1Hdef main(): [11;9Hpass[12;1H[K[13;1Hmain()[10;1H[11;1H[12;1H[11;13H[11;12H [11;12H[11;11H [11;11H[11;10H [11;10H[11;9H [11;9Hif[11;12Hcheck_reboot():[13;1H[K[14;1Hmain()[12;1H[12;9H[12;17Hprint("Pending[12;32HReboot.")[14;1H[K[15;1Hmain()[13;1H[13;9H[13;17Hsys.exit()[13;26H1)[13;27H[12;27H[11;27H[10;12H[9;1H[8;27H[7;27H[6;20H[5;1H[4;10H[6;1H[K[7;1Hdef check_reboot():[K[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[10;1H[K[11;1Hdef main():[K[12;9Hif check_reboot():[K[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;1H[K[16;1Hmain()[5;1Himport[5;8Hsys[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 15 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[5;11H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -a -m "Call check_reb [Kooot from main, exit with 1 on error"
+]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 11 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[6;1Hdef check_reboot():[7;9H"""Returns True if the computer has a pending reboot."""[8;9Hreturn os.path.exist("/run/reboot-required")[9;1Hdef main():[10;9Hpass[12;1Hmain()[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[1;27H[7mFile: all_checks.py            Modified[27m[9;1H[K[10;1Hdef main(): [11;9Hpass[12;1H[K[13;1Hmain()[10;1H[11;1H[12;1H[11;13H[11;12H [11;12H[11;11H [11;11H[11;10H [11;10H[11;9H [11;9Hif[11;12Hcheck_reboot():[13;1H[K[14;1Hmain()[12;1H[12;9H[12;17Hprint("Pending[12;32HReboot.")[14;1H[K[15;1Hmain()[13;1H[13;9H[13;17Hsys.exit()[13;26H1)[13;27H[12;27H[11;27H[10;12H[9;1H[8;27H[7;27H[6;20H[5;1H[4;10H[6;1H[K[7;1Hdef check_reboot():[K[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[10;1H[K[11;1Hdef main():[K[12;9Hif check_reboot():[K[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;1H[K[16;1Hmain()[5;1Himport[5;8Hsys[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 15 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[5;11H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -a -m "Call check_reb [Kooot from main, exit with 1 on error"[?1l>[?2004l
+]2;git commit -a -m "Call check_reboot from main, exit with 1 on error"]1;git[main 2ecf8fa] Call check_reboot from main, exit with 1 on error
+ 2 files changed, 287 insertions(+), 168 deletions(-)
+ mode change 100644 => 100755 all_checks.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [Kggit log[?1l>[?2004l
+]2;git log]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+[33mcommit 9d2c56ed171bcfe26b7052f46fb734f4d09a44f1[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:33:48 2025 -0400[m
+[m
+    adding[m
+[m
+[33mcommit e80592981cc3588498935e1e4f4929433ddb1773[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kggit log -p[?1l>[?2004l
+]2;git log -p]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mold mode 100644[m[m
+[1mnew mode 100755[m[m
+[1mindex c1e78ab..bff2049[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -1,11 +1,15 @@[m[m
+ #!/usr/bin/env python3[m[m
+ import os[m[m
+[32m+[m[32mimport sys[m[m
+ [m[m
+ def check_reboot():[m[m
+        """Returns True if the computer has a pending reboot."""[m[m
+:[K[K [KESCESC[KOO[KBB[K        return os.path.exist("/run/reboot-required")[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
+:[K[K [KESCESC[KOO[KBB[K def main():[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-       pass[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32mif check_reboot():[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m               [32mprint("Pending Reboot.")[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m               [32msys.exit(1)[m[m
+:[K[K [KESCESC[KOO[KBB[K [m[m
+:[K[K [KESCESC[KOO[KBB[K main()[m[m
+:[K[K [KESCESC[KOO[KBB[K [m[m
+:[K[K [KESCESC[KOO[KBB[K[1mdiff --git a/typescript b/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[1mindex 76dac71..536f216 100644[m[m
+:[K[K [KESCESC[KOO[KBB[K[1m--- a/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[1m+++ b/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[36m@@ -290,36 +290,48 @@[m [mhaiku.txt              typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K [31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K [31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K [1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0mpting_practice[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ting_practice[7m^G[27mile:[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0m//Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_prac[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0mtice[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mn[0mano all_checks.py[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-ano all_checks.py[7m^G[27mano[7m^G[27m[7m  UW PICO 5.09                    New Buff[m :[K[K [KESCESC[KOO[KBB[K[31m[7mer                       [27m[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev P[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell                                            [m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m                       [7m[ New file ][27m[7m  UW PICO 5.09                Fi[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7mle: all_checks.py                  [27m[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fi[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27ml[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[7mFile: all_checks.py            Mod[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7mified[27m#!/usr/bin/envpython3importosdefcheck_reboot():"""ReturnsTruei[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mfthecomputerhasapendingreboot."""returnos.path.exist("/run/reboot-r[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mequired")defmain():passmain()r_file.txt         [31mstdout_example.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-example                story.txt[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-generate_report.py     syslog[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-guests.txt             [31mtoploglines.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-haiku.txt              typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-hello_world.py.save[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mpting_practice[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ting_practice[7m^G[27mile:[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m//Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_prac[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mtice[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1ms[0mcripts[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-cripts[7m^G[27mcripts[7m^G[27m[1m[7m%[27m[1m[0m                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m                 [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mson/desktop/scripting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-P[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mro[7m^G[27m.ctice/scripts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harriso[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mn/desktop/scripting_practice/scripts[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mr[0mm -f[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m[0m[27m[24m[01;32m[36m[00m[01;34m[31m[34m[33m[00mr .[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-m -fr .[7m^G[27mm[7m^G[27mrm: "." and ".." may not be removed[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mpting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ctice/scrip[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/script[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0ming_practice/scripts[7m^M[27m[0m[27m[24m[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mr[0mm -fr .git[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-m -fr .git[7m^G[27mm[7m^G[27m[1m[7m%[27m[1m[0m                                                  [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m                [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harris[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mon/desktop/scripting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-Pr[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mo[7m^G[27m.ctice/scripts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harrison[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m/desktop/scripting_practice/scripts[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1ml[0ms[7m^M[27m[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit log -p  [?1l>[?2004l
+]2;git log]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+[33mcommit 9d2c56ed171bcfe26b7052f46fb734f4d09a44f1[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:33:48 2025 -0400[m
+[m
+    adding[m
+[m
+[33mcommit e80592981cc3588498935e1e4f4929433ddb1773[m[m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Tue Apr 15 10:28:36 2025 -0400[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Remove submodule and add scripts as regular folder[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K[33mcommit 2ff8703ae5d066a202ac4652d2b20d356fc4cbe1[m[m
+:[K[K [KESCESC[KOO[KBB[KAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Mon Apr 14 14:30:03 2025 -0400[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Adding diff file practice[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KAA[K[HM    add all_checks.py[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Tue Apr 15 10:43:20 2025 -0400[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    Call check_reboot from main, exit with 1 on error[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Tue Apr 15 12:39:25 2025 -0400[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit log   show [7m2ecf8fa5c438b2e1de22597[7md[7me719d38b496c24b0[27m[K[A[27C[27m2[27me[27mc[27mf[27m8[27mf[27ma[27m5[27mc[27m4[27m3[27m8[27mb[27m2[27me[27m1[27md[27me[27m2[27m2[27m5[27m9[27m7d[27me[27m7[27m1[27m9[27md[27m3[27m8[27mb[27m4[27m9[27m6[27mc[27m2[27m4[27mb[27m0[?1l>[?2004l
+]2;git show 2ecf8fa5c438b2e1de22597de719d38b496c24b0]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mold mode 100644[m[m
+[1mnew mode 100755[m[m
+[1mindex c1e78ab..bff2049[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -1,11 +1,15 @@[m[m
+ #!/usr/bin/env python3[m[m
+ import os[m[m
+[32m+[m[32mimport sys[m[m
+ [m[m
+ def check_reboot():[m[m
+        """Returns True if the computer has a pending reboot."""[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit log --stat[?1l>[?2004l
+]2;git log --stat]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+ all_checks.py |   6 [32m+[m[31m-[m[m
+ typescript    | 449 [32m++++++++++++++++++++++++++++[m[31m-----------------[m[m
+ 2 files changed, 287 insertions(+), 168 deletions(-)[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+ scripts/all_checks.py => all_checks.py |   1 [32m+[m[m
+ typescript                             | 602 [32m++++++++++++++++[m[31m----[m[m
+ 2 files changed, 504 insertions(+), 99 deletions(-)[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano all_checks.py[1m [0m[0m [?1l>[?2004l
+]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 15 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[16;1Hmain()[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[14;28H[1;27H[7mFile: all_checks.py            Modified[27m[16;1H[K[17;1Hmain()[15;1H[15;9Hprint9[15;14H [15;14H("Everything[15;27Hok.")[17;1H[K[16;1H[16;9Hsys.exit()[16;18H0)[16;19H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 17 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[16;19H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit diff[?1l>[?2004l
+]2;git diff]1;git[?1049h[?1h=[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mindex bff2049..4ea2bba 100755[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -10,6 +10,8 @@[m [mdef main():[m[m
+        if check_reboot():[m[m
+                print("Pending Reboot.")[m[m
+                sys.exit(1)[m[m
+[32m+[m       [32mprint("Everything ok.")[m[m
+[32m+[m       [32msys.exit(0)[m[m
+ [m[m
+ main()[m[m
+ [m[m
+[1mdiff --git a/typescript b/typescript[m[m
+[1mindex 536f216..adfefc5 100644[m[m
+[1m--- a/typescript[m[m
+[1m+++ b/typescript[m[m
+[36m@@ -442,240 +442,326 @@[m [mhaiku.txt              [1m[36mvalidations[39;49m[0m[m[m
+ [31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hT[27m To Spell[K[5;11H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -a -m "Call check_reb [Kooot from main, exit with 1 on error"[?1l>[?2004l
+]2;git commit -a -m "Call check_reboot from main, exit with 1 on error"]1;git[main 2ecf8fa] Call check_reboot from main, exit with 1 on error
+ 2 files changed, 287 insertions(+), 168 deletions(-)
+ mode change 100644 => 100755 all_checks.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [Kggit log[?1l>[?2004l
+]2;git log]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+[33mcommit 9d2c56ed171bcfe26b7052f46fb734f4d09a44f1[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:33:48 2025 -0400[m
+[m
+    adding[m
+[m
+[33mcommit e80592981cc3588498935e1e4f4929433ddb1773[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kggit log -p[?1l>[?2004l
+]2;git log -p]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mold mode 100644[m[m
+[1mnew mode 100755[m[m
+[1mindex c1e78ab..bff2049[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -1,11 +1,15 @@[m[m
+ #!/usr/bin/env python3[m[m
+ import os[m[m
+[32m+[m[32mimport sys[m[m
+ [m[m
+ def check_reboot():[m[m
+        """Returns True if the computer has a pending reboot."""[m[m
+:[K[K [KESCESC[KOO[KBB[K        return os.path.exist("/run/reboot-required")[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
+:[K[K [KESCESC[KOO[KBB[K def main():[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-       pass[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32mif check_reboot():[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m               [32mprint("Pending Reboot.")[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m               [32msys.exit(1)[m[m
+:[K[K [KESCESC[KOO[KBB[K [m[m
+:[K[K [KESCESC[KOO[KBB[K main()[m[m
+:[K[K [KESCESC[KOO[KBB[K [m[m
+:[K[K [KESCESC[KOO[KBB[K[1mdiff --git a/typescript b/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[1mindex 76dac71..536f216 100644[m[m
+:[K[K [KESCESC[KOO[KBB[K[1m--- a/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[1m+++ b/typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[36m@@ -290,36 +290,48 @@[m [mhaiku.txt              typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K [31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K [31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K [1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0mpting_practice[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ting_practice[7m^G[27mile:[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0m//Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_prac[m :[K[K [KESCESC[KOO[KBB[K[1m[7m[27m[1m[0mtice[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mn[0mano all_checks.py[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-ano all_checks.py[7m^G[27mano[7m^G[27m[7m  UW PICO 5.09                    New Buff[m :[K[K [KESCESC[KOO[KBB[K[31m[7mer                       [27m[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev P[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell                                            [m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m                       [7m[ New file ][27m[7m  UW PICO 5.09                Fi[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7mle: all_checks.py                  [27m[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fi[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27ml[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[7mFile: all_checks.py            Mod[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7mified[27m#!/usr/bin/envpython3importosdefcheck_reboot():"""ReturnsTruei[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mfthecomputerhasapendingreboot."""returnos.path.exist("/run/reboot-r[m :[K[K [KESCESC[KOO[KBB[K[31m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27m[7m[27mequired")defmain():passmain()r_file.txt         [31mstdout_example.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-example                story.txt[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mfruits.sh[39;49m[0m              [31mstreams.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mgather-information.sh[39;49m[0m  [31mstreams_err.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-generate_report.py     syslog[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-guests.txt             [31mtoploglines.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-haiku.txt              typescript[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhealth_checks.py[39;49m[0m       [1m[36mvalidations[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhello.py[39;49m[0m               [31mvariables.py[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[31mhello_world.py[39;49m[0m         [31mwhile.sh[39;49m[0m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-hello_world.py.save[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mpting_practice[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ting_practice[7m^G[27mile:[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m//Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_prac[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mtice[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1ms[0mcripts[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-cripts[7m^G[27mcripts[7m^G[27m[1m[7m%[27m[1m[0m                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m                 [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mson/desktop/scripting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-P[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mro[7m^G[27m.ctice/scripts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harriso[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mn/desktop/scripting_practice/scripts[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mr[0mm -f[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m[0m[27m[24m[01;32m[36m[00m[01;34m[31m[34m[33m[00mr .[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-m -fr .[7m^G[27mm[7m^G[27mrm: "." and ".." may not be removed[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-[1m[7m%[27m[1m[0m                                                                 [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scri[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mpting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-Pro[7m^G[27m.ctice/scrip[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harrison/desktop/script[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0ming_practice/scripts[7m^M[27m[0m[27m[24m[01;31m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1mr[0mm -fr .git[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[31m-m -fr .git[7m^G[27mm[7m^G[27m[1m[7m%[27m[1m[0m                                                  [m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m                [7m^M[27m [7m^M[27mile://Harrisons-MacBook-Pro.local/Users/harris[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mon/desktop/scripting_practice/scripts[7m^G[27marrison@Harrisons-MacBook-Pr[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0mo[7m^G[27m.ctice/scripts[7m^G[27mile://Harrisons-MacBook-Pro.local/Users/harrison[m :[K[K [KESCESC[KOO[KBB[K[31m[1m[7m[27m[1m[0m/desktop/scripting_practice/scripts[7m^M[27m[0m[27m[24m[01;32m➜  [36mscripts[00m [01;34mgit:([31mmain[34m) [33m✗[00m [1ml[0ms[7m^M[27m[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit log -p  [?1l>[?2004l
+]2;git log]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+[33mcommit 9d2c56ed171bcfe26b7052f46fb734f4d09a44f1[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:33:48 2025 -0400[m
+[m
+    adding[m
+[m
+[33mcommit e80592981cc3588498935e1e4f4929433ddb1773[m[m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[KAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Tue Apr 15 10:28:36 2025 -0400[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Remove submodule and add scripts as regular folder[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K[33mcommit 2ff8703ae5d066a202ac4652d2b20d356fc4cbe1[m[m
+:[K[K [KESCESC[KOO[KBB[KAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+:[K[K [KESCESC[KOO[KBB[KDate:   Mon Apr 14 14:30:03 2025 -0400[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KBB[K    Adding diff file practice[m
+:[K[K [KESCESC[KOO[KBB[K[m
+:[K[K [KESCESC[KOO[KAA[K[HM    add all_checks.py[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Tue Apr 15 10:43:20 2025 -0400[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    Call check_reboot from main, exit with 1 on error[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Tue Apr 15 12:39:25 2025 -0400[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: Harrison Anthony <harrisoneanthony@gmail.com>[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+[20;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit log   show [7m2ecf8fa5c438b2e1de22597[7md[7me719d38b496c24b0[27m[K[A[27C[27m2[27me[27mc[27mf[27m8[27mf[27ma[27m5[27mc[27m4[27m3[27m8[27mb[27m2[27me[27m1[27md[27me[27m2[27m2[27m5[27m9[27m7d[27me[27m7[27m1[27m9[27md[27m3[27m8[27mb[27m4[27m9[27m6[27mc[27m2[27m4[27mb[27m0[?1l>[?2004l
+]2;git show 2ecf8fa5c438b2e1de22597de719d38b496c24b0]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mold mode 100644[m[m
+[1mnew mode 100755[m[m
+[1mindex c1e78ab..bff2049[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -1,11 +1,15 @@[m[m
+ #!/usr/bin/env python3[m[m
+ import os[m[m
+[32m+[m[32mimport sys[m[m
+ [m[m
+ def check_reboot():[m[m
+        """Returns True if the computer has a pending reboot."""[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit log --stat[?1l>[?2004l
+]2;git log --stat]1;git[?1049h[?1h=[33mcommit 2ecf8fa5c438b2e1de22597de719d38b496c24b0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 12:39:25 2025 -0400[m
+[m
+    Call check_reboot from main, exit with 1 on error[m
+[m
+ all_checks.py |   6 [32m+[m[31m-[m[m
+ typescript    | 449 [32m++++++++++++++++++++++++++++[m[31m-----------------[m[m
+ 2 files changed, 287 insertions(+), 168 deletions(-)[m
+[m
+[33mcommit 5acfc52ea6d52bd0267dd1c5700731007ab8b221[m[33m ([m[1;31morigin/main[m[33m)[m[m
+Author: Harrison Anthony <harrisoneanthony@gmail.com>[m
+Date:   Tue Apr 15 10:43:20 2025 -0400[m
+[m
+    add all_checks.py[m
+[m
+ scripts/all_checks.py => all_checks.py |   1 [32m+[m[m
+ typescript                             | 602 [32m++++++++++++++++[m[31m----[m[m
+ 2 files changed, 504 insertions(+), 99 deletions(-)[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano all_checks.py[1m [0m[0m [?1l>[?2004l
+]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 15 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[16;1Hmain()[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[14;28H[1;27H[7mFile: all_checks.py            Modified[27m[16;1H[K[17;1Hmain()[15;1H[15;9Hprint9[15;14H [15;14H("Everything[15;27Hok.")[17;1H[K[16;1H[16;9Hsys.exit()[16;18H0)[16;19H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 17 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[16;19H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit diff[?1l>[?2004l
+]2;git diff]1;git[?1049h[?1h=[1mdiff --git a/all_checks.py b/all_checks.py[m[m
+[1mindex bff2049..4ea2bba 100755[m[m
+[1m--- a/all_checks.py[m[m
+[1m+++ b/all_checks.py[m[m
+[36m@@ -10,6 +10,8 @@[m [mdef main():[m[m
+        if check_reboot():[m[m
+                print("Pending Reboot.")[m[m
+                sys.exit(1)[m[m
+[32m+[m       [32mprint("Everything ok.")[m[m
+[32m+[m       [32msys.exit(0)[m[m
+ [m[m
+ main()[m[m
+ [m[m
+[1mdiff --git a/typescript b/typescript[m[m
+[1mindex 536f216..adfefc5 100644[m[m
+[1m--- a/typescript[m[m
+[1m+++ b/typescript[m[m
+[36m@@ -442,240 +442,326 @@[m [mhaiku.txt              [1m[36mvalidations[39;49m[0m[m[m
+ [31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m[m[m
+:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add -p[?1l>[?2004l
+]2;git add -p]1;git[1mdiff --git a/all_checks.py b/all_checks.py[m
+[1mindex bff2049..4ea2bba 100755[m
+[1m--- a/all_checks.py[m
+[1m+++ b/all_checks.py[m
+[36m@@ -10,6 +10,8 @@[m [mdef main():[m
+ 	if check_reboot():[m
+ 		print("Pending Reboot.")[m
+ 		sys.exit(1)[m
+[32m+[m	[32mprint("Everything ok.")[m
+[32m+[m	[32msys.exit(0)[m
+ [m
+ main()[m
+ [m
+[1;34mStage this hunk [y,n,q,a,d,/,e,?]? [m
