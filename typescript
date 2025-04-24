@@ -1416,135 +1416,117 @@ AttributeError: module 'posixpath' has no attribute 'exist'. Did you mean: 'exis
 [1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h./all_checks.py[15Dgit status     checkout all_checks.py[22Dstatus                [16D[10D./all_checks.py[15Dnano all_checks.py[?1l>[?2004l
 ]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 17 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;9Hprint("Everything ok.")[16;9Hsys.exit(0)[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[9;9H[9;10H[9;11H[9;12H[9;13H[9;14H[9;15H[9;16H[9;17H[9;18H[9;19H[9;20H[9;21H[9;22H[9;23H[9;24H[9;25H[9;26H[9;27H[9;28H[9;29H[1;27H[7mFile: all_checks.py            Modified[27m[9;29H[4hs[4l[9;30H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 17 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[9;30H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnano all_checks.py[18D./[3P[13C   [?1l>[?2004l
 ]2;./all_checks.py]1;./all_checks.pyEverything ok.
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h../allwhitespace.
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [Kggit log[?1l>[?2004l
-<stdin>:271: trailing whitespace.
-:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m)[00m [K[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [Kggit log -p[?1l>[?2004l
-<stdin>:325: trailing whitespace.
-:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit log -p  [?1l>[?2004l
-<stdin>:367: trailing whitespace.
-[20;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit log   show [7m2ecf8fa5c438b2e1de22597[7md[7me719d38b496c24b0[27m[K[A[27C[27m2[27me[27mc[27mf[27m8[27mf[27ma[27m5[27mc[27m4[27m3[27m8[27mb[27m2[27me[27m1[27md[27me[27m2[27m2[27m5[27m9[27m7d[27me[27m7[27m1[27m9[27md[27m3[27m8[27mb[27m4[27m9[27m6[27mc[27m2[27m4[27mb[27m0[?1l>[?2004l
-warning: squelched 15 whitespace errors
-warning: 20 lines add whitespace errors.
-
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit diff --staged[?1l>[?2004l
-]2;git diff --staged]1;git[?1049h[?1h=[1mdiff --git a/all_checks.py b/all_checks.py[m[m
-[1mindex bff2049..4ea2bba 100755[m[m
-[1m--- a/all_checks.py[m[m
-[1m+++ b/all_checks.py[m[m
-[36m@@ -10,6 +10,8 @@[m [mdef main():[m[m
-        if check_reboot():[m[m
-                print("Pending Reboot.")[m[m
-                sys.exit(1)[m[m
-[32m+[m       [32mprint("Everything ok.")[m[m
-[32m+[m       [32msys.exit(0)[m[m
- [m[m
- main()[m[m
- [m[m
-[1mdiff --git a/typescript b/typescript[m[m
-[1mindex 536f216..5642d7f 100644[m[m
-[1m--- a/typescript[m[m
-[1m+++ b/typescript[m[m
-[36m@@ -442,240 +442,380 @@[m [mhaiku.txt              [1m[36mvalidations[39;49m[0m[m[m
- [31mhello.py[39;49m[0m               [31mwhile.sh[39;49m[0m[m[m
-:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "Add a message whe [Knn everything is ok"[?1l>[?2004l
-]2;git commit -m "Add a message when everything is ok"]1;git[main 0701c1d] Add a message when everything is ok
- 2 files changed, 379 insertions(+), 237 deletions(-)
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hccd h  checks/[?1l>[?2004l
-]2;cd checks/]1;cdcd: no such file or directory: checks/
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heecho .DS_STORE > .gitignore[?1l>[?2004l
-]2;echo .DS_STORE > .gitignore]1;echo[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hlls -la[?1l>[?2004l
-]2;ls -G -la]1;lstotal 1136
-drwxr-xr-x  60 harrison  staff    1920 Apr 16 10:40 [1m[36m.[39;49m[0m
-drwx------@ 62 harrison  staff    1984 Apr 16 10:40 [1m[36m..[39;49m[0m
--rw-r--r--@  1 harrison  staff   10244 Apr 15 10:35 .DS_Store
-drwxr-xr-x  14 harrison  staff     448 Apr 16 10:00 [1m[36m.git[39;49m[0m
--rw-r--r--   1 harrison  staff      10 Apr 16 10:40 .gitignore
--rw-r--r--   1 harrison  staff      21 Mar 27 13:51 README.md
-drwxr-xr-x   6 harrison  staff     192 Mar 24 13:50 [1m[36m__pycache__[39;49m[0m
--rwxr-xr-x   1 harrison  staff     290 Apr 16 09:56 [31mall_checks.py[39;49m[0m
--rw-r--r--   1 harrison  staff     267 Mar  7 13:10 areas.py
--rw-r--r--   1 harrison  staff     135 Mar 10 15:24 by_department.csv
-drwxr-xr-x   4 harrison  staff     128 Mar 24 15:00 [1m[36mcake_factory[39;49m[0m
--rwxr-xr-x   1 harrison  staff      93 Mar 25 10:04 [31mcapitalize.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     145 Mar 26 10:53 [31mcapitalize_words.py[39;49m[0m
--rw-r--r--   1 harrison  staff     371 Mar 24 13:33 charfreq.py
--rwxr-xr-x   1 harrison  staff     345 Mar 19 12:18 [31mcheck_cron.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     126 Mar 25 14:02 [31mcheck_localhost.sh[39;49m[0m
--rw-r--r--   1 harrison  staff     220 Apr 11 09:18 cpu_usage.py
--rwxr-xr-x   1 harrison  staff     246 Mar 18 17:33 [31mcreate_file.py[39;49m[0m
--rw-r--r--   1 harrison  staff     701 Mar 10 14:47 csv_file.txt
--rw-r--r--   1 harrison  staff    1251 Apr 14 09:43 disk_usage.diff
--rwxr-xr-x   1 harrison  staff     617 Apr 14 09:45 [31mdisk_usage.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     617 Apr 14 09:35 [31mdisk_usage_fixed.py[39;49m[0m
--rw-r--r--   1 harrison  staff     646 Apr 14 09:37 disk_usage_original.py
--rw-r--r--   1 harrison  staff     231 Mar 24 19:57 error_file.txt
--rw-r--r--   1 harrison  staff      17 Mar 18 17:34 example
--rwxr-xr-x   1 harrison  staff      77 Mar 26 09:36 [31mfruits.sh[39;49m[0m
--rwxr-xr-x   1 harrison  staff     223 Mar 25 13:45 [31mgather-information.sh[39;49m[0m
--rw-r--r--   1 harrison  staff    3164 Mar 24 15:17 generate_report.py
--rw-r--r--   1 harrison  staff      29 Mar 10 11:18 guests.txt
--rw-r--r--   1 harrison  staff      67 Mar 25 10:06 haiku.txt
--rwxr-xr-x   1 harrison  staff     363 Mar  7 14:10 [31mhealth_checks.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff      89 Mar 18 08:33 [31mhello.py[39;49m[0m
--rwxr-xr-x@  1 harrison  staff      21 Mar  7 12:49 [31mhello_world.py[39;49m[0m
--rw-------   1 harrison  staff      45 Mar  7 12:24 hello_world.py.save
--rw-r--r--   1 harrison  staff      59 Mar 10 15:01 hosts.csv
--rw-r--r--   1 harrison  staff      35 Mar 24 19:59 myamazingfile.txt
--rw-r--r--   1 harrison  staff     171 Mar 19 10:01 myapp.py
-drwxr-xr-x   3 harrison  staff      96 Mar 24 18:27 [1m[36mnew_dir[39;49m[0m
--rw-r--r--   1 harrison  staff      84 Mar 24 19:43 new_file.txt
--rw-r--r--   1 harrison  staff  105099 Mar 27 09:34 notes.txt
-drwxr-xr-x   8 harrison  staff     256 Mar 26 09:44 [1m[36mold_website[39;49m[0m
--rwxr-xr-x   1 harrison  staff      50 Mar 18 17:26 [31mparameters.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     127 Mar 26 08:30 [31mrandom-exit.py[39;49m[0m
-drwxr-xr-x   5 harrison  staff     160 Mar 24 09:47 [1m[36mrearrange[39;49m[0m
--rw-r--r--   1 harrison  staff     195 Apr 11 09:06 rearrange1.py
--rw-r--r--   1 harrison  staff     196 Apr 11 09:08 rearrange2.py
--rwxr-xr-x   1 harrison  staff     592 Mar 24 18:11 [31mremove_copied.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     110 Mar 26 08:33 [31mretry.sh[39;49m[0m
--rwxr-xr-x   1 harrison  staff     520 Mar 18 10:15 [31mseconds.py[39;49m[0m
--rw-r--r--   1 harrison  staff      48 Mar 25 10:02 spider.txt
--rwxr-xr-x   1 harrison  staff      75 Mar 24 19:41 [31mstdout_example.py[39;49m[0m
--rw-r--r--   1 harrison  staff      74 Mar 26 10:55 story.txt
--rwxr-xr-x   1 harrison  staff     359 Mar 18 16:34 [31mstreams.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff     167 Mar 24 19:49 [31mstreams_err.py[39;49m[0m
--rw-r--r--   1 harrison  staff     446 Mar 19 12:02 syslog
--rwxr-xr-x   1 harrison  staff     143 Mar 26 10:47 [31mtoploglines.sh[39;49m[0m
--rw-r--r--@  1 harrison  staff  224972 Apr 16 10:39 typescript
-drwxr-xr-x   5 harrison  staff     160 Mar 24 14:32 [1m[36mvalidations[39;49m[0m
--rwxr-xr-x   1 harrison  staff     174 Mar 18 16:44 [31mvariables.py[39;49m[0m
--rwxr-xr-x   1 harrison  staff      83 Mar 26 08:28 [31mwhile.sh[39;49m[0m
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add .gitignore[?1l>[?2004l
-]2;git add .gitignore]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "Add a gitignore f [Kiile, ignoreming . DS_STORE gi  files' "[P[20C [21D[P[20C [21D[A[66C.gitignore file, ignoring .DS_STORE files"[A[26C[?1l>[?2004l[1B
-]2;git commit -m "Add a .gitignore file, ignoring .DS_STORE files"]1;git[main 0f0e161] Add a .gitignore file, ignoring .DS_STORE files
- 1 file changed, 1 insertion(+)
- create mode 100644 .gitignore
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hl nnano all_checks.py[1m [0m[0m [?1l>[?2004l
-]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 17 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;9Hprint("Everything ok.")[16;9Hsys.exit(0)[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[9;53H[1;27H[7mFile: all_checks.py            Modified[27m[9;52H [9;52H[9;51H [9;51H[9;50H [9;50H[9;49H [9;49H[9;48H [9;48H[9;47H [9;47H[9;46H [9;46H[9;45H [9;45H[9;44H [9;44H[9;43H [9;43H[9;42H [9;42H[9;41H [9;41H[9;40H [9;40H[9;39H [9;39H[9;38H [9;38H[9;37H [9;37H[9;36H [9;36H[9;35H [9;35H[9;34H [9;34H[9;33H [9;33H[9;32H [9;32H[9;31H [9;31H[9;30H [9;30H[9;29H [9;29H[9;28H [9;28H[9;27H [9;27H[9;26H [9;26H[9;25H [9;25H[9;24H [9;24H[9;23H [9;23H[9;22H [9;22H[9;21H [9;21H[9;20H [9;20H[9;19H [9;19H[9;18H [9;18H[9;17H [9;17H[9;16H [9;16H[9;15H[9;14H [9;14H[9;13H [9;13H[9;12H [9;12H[9;11H [9;11H[9;10H [9;10H[9;9H [9;9H[9;1H[10;1Hdef main():[11;1H        if check_reboot():[12;9H        print("Pending Reboot.")[13;17Hsys.exit(1)[K[14;9Hprint("Everything ok.")[15;9Hsys.exit(0)[K[16;9H[K[17;1Hmain()[8;65H[8;64H [8;64H[8;63H [8;63H[8;62H [8;62H[8;61H [8;61H[8;60H [8;60H[8;59H [8;59H[8;58H [8;58H[8;57H [8;57H[8;56H [8;56H[8;55H [8;55H[8;54H[8;53H [8;53H[8;52H [8;52H[8;51H [8;51H[8;50H [8;50H[8;49H [8;49H[8;48H [8;48H[8;47H [8;47H[8;46H[8;45H [8;45H[8;44H[8;43H [8;43H[8;42H [8;42H[8;41H [8;41H[8;40H[8;39H [8;39H[8;38H [8;38H[8;37H [8;37H[8;36H [8;36H[8;35H [8;35H[8;34H [8;34H[8;33H [8;33H[8;32H [8;32H[8;31H[8;30H [8;30H[8;29H [8;29H[8;28H [8;28H[8;27H[8;26H [8;26H[8;25H [8;25H[8;24H[8;23H [8;23H[8;22H [8;22H[8;21H [8;21H[8;20H [8;20H[8;19H[8;18H [8;18H[8;17H [8;17H[8;16H [8;16H[8;15H [8;15H[8;14H [8;14H[8;13H [8;13H[8;12H [8;12H[8;11H [8;11H[8;10H [8;10H[8;9H [8;9H[8;1H[9;1Hdef main():[10;1H        if check_reboot():[11;9H        print("Pending Reboot.")[12;17Hsys.exit(1)[K[13;9Hprint("Everything ok.")[14;9Hsys.exit(0)[K[15;9H[K[16;1Hmain()[17;1H[K[7;20H[7;19H [7;19H[7;18H [7;18H[7;17H [7;17H[7;16H [7;16H[7;15H [7;15H[7;14H [7;14H[7;13H [7;13H[7;12H [7;12H[7;11H [7;11H[7;10H [7;10H[7;9H [7;9H[7;8H [7;8H[7;7H [7;7H[7;6H [7;6H[7;5H [7;5H[7;4H[7;3H [7;3H[7;2H [7;2H[7;1H [7;1H[8;1Hdef main():[9;1H        if check_reboot():[10;9H        print("Pending Reboot.")[11;17Hsys.exit(1)[K[12;9Hprint("Everything ok.")[13;9Hsys.exit(0)[K[14;9H[K[15;1Hmain()[16;1H[K[6;1H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 14 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[6;1H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h../all_checks.py[1m [0m[0m [?1l>[?2004l
-]2;./all_checks.py]1;./all_checks.pyTraceback (most recent call last):
-  File "/Users/harrison/Desktop/scripting_practice/./all_checks.py", line 13, in <module>
-    main()
-  File "/Users/harrison/Desktop/scripting_practice/./all_checks.py", line 7, in main
-    if check_reboot():
-NameError: name 'check_reboot' is not defined
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h../all_checks.py > output.txt[?1l>[?2004l
+]2;./all_checks.py > output.txt]1;./all_checks.py[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add *[?1l>[?2004l
+]2;git add *]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
 ]2;git status]1;gitOn branch main
 Your branch is ahead of 'origin/main' by 3 commits.
   (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   all_checks.py[m
+	[32mnew file:   output.txt[m
+	[32mmodified:   typescript[m
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31mmodified:   all_checks.py[m
 	[31mmodified:   typescript[m
 
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit checkout all_checks.py[1m [0m[0m [?1l>[?2004l
-]2;git checkout all_checks.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit stau tus[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit reset HEAD output.txt[?1l>[?2004l
+]2;git reset HEAD output.txt]1;gitUnstaged changes after reset:
+M	typescript
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
 ]2;git status]1;gitOn branch main
 Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   all_checks.py[m
+	[32mmodified:   typescript[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "it should be os.p [Kaath.exists"[?1l>[?2004l
+]2;git commit -m "it should be os.path.exists"]1;git[main 581eb9c] it should be os.path.exists
+ 2 files changed, 925 insertions(+), 177 deletions(-)
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004httouch auto-update.py[?1l>[?2004l
+]2;touch auto-update.py]1;touch[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004httouch gather-information.sh[?1l>[?2004l
+]2;touch gather-information.sh]1;touch[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add auto-update.py[?1l>[?2004l
+]2;git add auto-update.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "Add two new scrip [Ktts"[?1l>[?2004l
+]2;git commit -m "Add two new scripts"]1;git[main 7c7d5ee] Add two new scripts
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit  g  ggit add gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --ammend[?1l>[?2004l
+]2;git commit --ammend]1;giterror: unknown option `ammend'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit commit --ammend[19D                   [19Dgit commit --ammendend [?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[19;1H[K[20;1H[K[?1049l[main c381a34] Add two new scripts
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is ahead of 'origin/main' by 5 commits.
   (use "git push" to publish your local commits)
 
 Changes not staged for commit:
@@ -1553,17 +1535,225 @@ Changes not staged for commit:
 
 	[31mmodified:   typescript[m
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
 no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit statuscheckout all_checks.py[22Dstatus                [16D[10D./all_checks.py[?1l>[?2004l
-]2;./all_checks.py]1;./all_checks.pyTraceback (most recent call last):
-  File "/Users/harrison/Desktop/scripting_practice/./all_checks.py", line 16, in <module>
-    main()
-  File "/Users/harrison/Desktop/scripting_practice/./all_checks.py", line 10, in main
-    if check_reboot():
-  File "/Users/harrison/Desktop/scripting_practice/./all_checks.py", line 7, in check_reboot
-    return os.path.exist("/run/reboot-required")
-AttributeError: module 'posixpath' has no attribute 'exist'. Did you mean: 'exists'?
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h./all_checks.py[15Dgit status     checkout all_checks.py[22Dstatus                [16D[10D./all_checks.py[15Dnano all_checks.py[?1l>[?2004l
-]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 17 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exist("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;9Hprint("Everything ok.")[16;9Hsys.exit(0)[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[9;9H[9;10H[9;11H[9;12H[9;13H[9;14H[9;15H[9;16H[9;17H[9;18H[9;19H[9;20H[9;21H[9;22H[9;23H[9;24H[9;25H[9;26H[9;27H[9;28H[9;29H[1;27H[7mFile: all_checks.py            Modified[27m[9;29H[4hs[4l[9;30H[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22Hall_checks.py                                 [18;35H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 17 lines ][27m[1;27H[7m    File: all_checks.py                [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[9;30H[19;1H[K[20;1H[K[?1049l[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnano all_checks.py[18D./[3P[13C   [?1l>[?2004l
-]2;./all_checks.py]1;./all_checks.pyEverything ok.
-[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --amend[?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[16;1H[17;1H[3;1H# Your branch is ahead of 'origin/main' by 5 commits.[4;1H#   (use "git push" to publish your local commits)[5;3H[K[6;3HChanges to be committed:[K[7;9Hnew file:   auto-update.py[8;3H[K[9;3HChanges not staged for commit:[10;3H      modified:   typescript[11;3H[K[12;3HUntracked files:[K[13;9Houtput.txt[14;3H[K[15;1H[K[16;1H [17;1H[K[10;1H[11;1H[12;1H[13;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1HAdd two new scripts[K[4;1H[K[5;3HPlease enter the commit message for your changes. Lines starting[6;3Hwith '#' will be ignored, and an empty message aborts the commit.[7;9H[K[8;3HDate:      Wed Apr 16 12:14:55 2025 -0400[9;3H[K[10;3HOn branch main[K[11;3HYour branch is ahead of 'origin/main' by 5 commits.[12;3H  (use "git push" to publish your local commits)[13;9H[K[14;3HChanges to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[19;1H[K[20;1H[K[?1049l[main c91cd23] Add two new scripts
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit commit --amend[14Dadd gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit add gather-information.sh[25Dcommit --amend           [11D[14Dadd gather-information.sh[25Dstatus                   [19Dcommit --amendmend[15Dadd gather-information.sh[25Dcommit -m "Add two new scripts"[K[A[36Cadd auto-update.py[K[1B[K[A[57C[?1l>[?2004l[1B]2;git add auto-update.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --amend[?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[3;2H[3;3H[3;4H[3;5H[3;6H[3;7H[3;8H[3;9H[3;10H[3;11H[3;12H[3;13H[3;14H[3;15H[3;16H[3;17H[3;18H[3;19H[3;20H[1;1H[7m...harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG Modified[27m[3;20H.[5;1H[K[6;3HPlease enter the commit message for your changes. Lines starting [7;3Hwith '#' will be ignored, and an empty message aborts the commit.[8;3H[K[9;3HDate:      Wed Apr 16 12:14:55 2025 -0400[10;3H[K[11;3HOn branch main[K[12;3HYour branch is ahead of 'origin/main' by 5 commits.[13;5H(use "git push" to publish your local commits)[14;3H[K[15;3HChanges to be committed:[K[16;9Hnew file:   auto-update.py[17;3H[K[4;1H[6;1H[K[7;3HPlease enter the commit message for your changes. Lines starting [8;3Hwith '#' will be ignored, and an empty message aborts the commit.[9;3H[K[10;3HDate:      Wed Apr 16 12:14:55 2025 -0400[11;3H[K[12;3HOn branch main[K[13;3HYour branch is ahead of 'origin/main' by 5 commits.[14;5H(use "git push" to publish your local commits)[15;3H[K[16;3HChanges to be committed:[K[17;9Hnew file:   auto-update.py[5;1Hgatheri[5;7H [5;7H-information.sh[5;23Hwill[5;28Hbe[5;31Hused[5;36Hto[5;39Hcollect[5;47Hinfr[5;50H [5;50Hormation[5;59Hin[5;62Hcase[5;67H[5;1H$case o[Kf[5;10Herrors.[5;1Hgather-information.sh will be used to collect information in case $[7;1H[K[8;3HPlease enter the commit message for your changes. Lines starting [9;3Hwith '#' will be ignored, and an empty message aborts the commit.[10;3H[K[11;3HDate:      Wed Apr 16 12:14:55 2025 -0400[12;3H[K[13;3HOn branch main[K[14;3HYour branch is ahead of 'origin/main' by 5 commits.[15;5H(use "git push" to publish your local commits)[16;3H[K[17;3HChanges to be committed:[K[6;1Hauto-a[6;6H [6;6Hupdate.py[6;16Hwill[6;21Hbe[6;24Hrun[6;28Hdaily[6;34Hto[6;37Hupdate[6;44Hcomputers[6;54Hautomatically[6;1H$cally.[K[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22H</scripting_practice/.git/COMMIT_EDITMSG      [18;62H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 23 lines ][27m[1;1H[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[6;8H[19;1H[K[20;1H[K[?1049l[main 4f30a1f] Add two new scripts.
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push[?1l>[?2004l
+]2;git push]1;gitCounting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   5% (1/17)   Writing objects:  11% (2/17)   Writing objects:  17% (3/17)   Writing objects:  23% (4/17)   Writing objects:  29% (5/17)   Writing objects:  35% (6/17)   Writing objects:  41% (7/17)   Writing objects:  47% (8/17)   Writing objects:  52% (9/17)   Writing objects:  58% (10/17)   Writing objects:  64% (11/17)   Writing objects:  70% (12/17)   Writing objects:  76% (13/17)   Writing objects:  82% (14/17)   Writing objects:  88% (15/17)   Writing objects:  94% (16/17)   Writing objects: 100% (17/17)   Writing objects: 100% (17/17), 19.55 KiB | 3.91 MiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/9)[Kremote: Resolving deltas:  11% (1/9)[Kremote: Resolving deltas:  22% (2/9)[Kremote: Resolving deltas:  33% (3/9)[Kremote: Resolving deltas:  44% (4/9)[Kremote: Resolving deltas:  55% (5/9)[Kremote: Resolving deltas:  66% (6/9)[Kremote: Resolving deltas:  77% (7/9)[Kremote: Resolving deltas:  88% (8/9)[Kremote: Resolving deltas: 100% (9/9)[Kremote: Resolving deltas: 100% (9/9), completed with 1 local object.[K
+To https://github.com/harrisoneanthony/scripting_practice.git
+   5acfc52..4f30a1f  main -> main
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano all_checks.py[1m [0m[0m [?1l>[?2004l
+]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 17 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exists("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;9Hprint("Everything ok.")[16;9Hsys.exit(0)[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[14;28H[1;27H[7mFile: all_checks.py            Modified[27m[15;9H[K[16;9Hprint("Everything ok.")[17;9Hsys.exit(0)[15;1H[15;9Hif[15;12Hdisk_full():[16;9H[K[17;9Hprint("Everything ok.")[16;1H[16;9H[16;17Hprint("Disk[16;29HFull."[17;9H[K[17;1H[17;9Hprint("Everything ok.")[16;35H)[17;9H[K[17;1H[17;9H[17;17Hsys.exit(1)[3;1Hdef main():[K[4;1H        if check_reboot():[5;1H                print("Pending Reboot.")[6;17Hsys.exit(1)[7;1H        if disk_full():[8;9H        print("Disk Full.")[K[9;9H        sys.exit(1)[K[10;9Hprint("Everything ok.")[11;1H        sys.exit(0)[12;9H[K[13;1Hmain()[K[14;17H[K[15;9H[K[16;17H[K[17;17H[K[10;28H[11;20Hmmain[34m) [33m✗[00m [K[?1h=[?2004hggit reset HEAD output.txt[?1l>[?2004l
+]2;git reset HEAD output.txt]1;gitUnstaged changes after reset:
+M	typescript
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   all_checks.py[m
+	[32mmodified:   typescript[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "it should be os.p [Kaath.exists"[?1l>[?2004l
+]2;git commit -m "it should be os.path.exists"]1;git[main 581eb9c] it should be os.path.exists
+ 2 files changed, 925 insertions(+), 177 deletions(-)
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004httouch auto-update.py[?1l>[?2004l
+]2;touch auto-update.py]1;touch[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004httouch gather-information.sh[?1l>[?2004l
+]2;touch gather-information.sh]1;touch[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add auto-update.py[?1l>[?2004l
+]2;git add auto-update.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m "Add two new scrip [Ktts"[?1l>[?2004l
+]2;git commit -m "Add two new scripts"]1;git[main 7c7d5ee] Add two new scripts
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit  g  ggit add gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --ammend[?1l>[?2004l
+]2;git commit --ammend]1;giterror: unknown option `ammend'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;31m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit commit --ammend[19D                   [19Dgit commit --ammendend [?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[19;1H[K[20;1H[K[?1049l[main c381a34] Add two new scripts
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit add gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --amend[?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[16;1H[17;1H[3;1H# Your branch is ahead of 'origin/main' by 5 commits.[4;1H#   (use "git push" to publish your local commits)[5;3H[K[6;3HChanges to be committed:[K[7;9Hnew file:   auto-update.py[8;3H[K[9;3HChanges not staged for commit:[10;3H      modified:   typescript[11;3H[K[12;3HUntracked files:[K[13;9Houtput.txt[14;3H[K[15;1H[K[16;1H [17;1H[K[10;1H[11;1H[12;1H[13;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1HAdd two new scripts[K[4;1H[K[5;3HPlease enter the commit message for your changes. Lines starting[6;3Hwith '#' will be ignored, and an empty message aborts the commit.[7;9H[K[8;3HDate:      Wed Apr 16 12:14:55 2025 -0400[9;3H[K[10;3HOn branch main[K[11;3HYour branch is ahead of 'origin/main' by 5 commits.[12;3H  (use "git push" to publish your local commits)[13;9H[K[14;3HChanges to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[19;1H[K[20;1H[K[?1049l[main c91cd23] Add two new scripts
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit commit --amend[14Dadd gather-information.sh[?1l>[?2004l
+]2;git add gather-information.sh]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hgit add gather-information.sh[25Dcommit --amend           [11D[14Dadd gather-information.sh[25Dstatus                   [19Dcommit --amendmend[15Dadd gather-information.sh[25Dcommit -m "Add two new scripts"[K[A[36Cadd auto-update.py[K[1B[K[A[57C[?1l>[?2004l[1B]2;git add auto-update.py]1;git[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit commit --amend[?1l>[?2004l
+]2;git commit --amend]1;git[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 20 lines ][27m[1;1H[J[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[3;1HAdd two new scripts[5;1H# Please enter the commit message for your changes. Lines starting[6;1H# with '#' will be ignored, and an empty message aborts the commit.[7;1H#[8;1H# Date:      Wed Apr 16 12:14:55 2025 -0400[9;1H#[10;1H# On branch main[11;1H# Your branch is ahead of 'origin/main' by 5 commits.[12;1H#   (use "git push" to publish your local commits)[13;1H#[14;1H# Changes to be committed:[15;1H#       new file:   auto-update.py[16;1H#[17;1H# Changes not staged for commit:[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[3;2H[3;3H[3;4H[3;5H[3;6H[3;7H[3;8H[3;9H[3;10H[3;11H[3;12H[3;13H[3;14H[3;15H[3;16H[3;17H[3;18H[3;19H[3;20H[1;1H[7m...harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG Modified[27m[3;20H.[5;1H[K[6;3HPlease enter the commit message for your changes. Lines starting [7;3Hwith '#' will be ignored, and an empty message aborts the commit.[8;3H[K[9;3HDate:      Wed Apr 16 12:14:55 2025 -0400[10;3H[K[11;3HOn branch main[K[12;3HYour branch is ahead of 'origin/main' by 5 commits.[13;5H(use "git push" to publish your local commits)[14;3H[K[15;3HChanges to be committed:[K[16;9Hnew file:   auto-update.py[17;3H[K[4;1H[6;1H[K[7;3HPlease enter the commit message for your changes. Lines starting [8;3Hwith '#' will be ignored, and an empty message aborts the commit.[9;3H[K[10;3HDate:      Wed Apr 16 12:14:55 2025 -0400[11;3H[K[12;3HOn branch main[K[13;3HYour branch is ahead of 'origin/main' by 5 commits.[14;5H(use "git push" to publish your local commits)[15;3H[K[16;3HChanges to be committed:[K[17;9Hnew file:   auto-update.py[5;1Hgatheri[5;7H [5;7H-information.sh[5;23Hwill[5;28Hbe[5;31Hused[5;36Hto[5;39Hcollect[5;47Hinfr[5;50H [5;50Hormation[5;59Hin[5;62Hcase[5;67H[5;1H$case o[Kf[5;10Herrors.[5;1Hgather-information.sh will be used to collect information in case $[7;1H[K[8;3HPlease enter the commit message for your changes. Lines starting [9;3Hwith '#' will be ignored, and an empty message aborts the commit.[10;3H[K[11;3HDate:      Wed Apr 16 12:14:55 2025 -0400[12;3H[K[13;3HOn branch main[K[14;3HYour branch is ahead of 'origin/main' by 5 commits.[15;5H(use "git push" to publish your local commits)[16;3H[K[17;3HChanges to be committed:[K[6;1Hauto-a[6;6H [6;6Hupdate.py[6;16Hwill[6;21Hbe[6;24Hrun[6;28Hdaily[6;34Hto[6;37Hupdate[6;44Hcomputers[6;54Hautomatically[6;1H$cally.[K[18;1H                                                                   [18;1H[7mFile Name to write :                                               [18;22H[27m[19;13H[7mT[27m  To File                                            [K[20;2H[7mC[27m Cancel  [7mT[27m[7mA[27m[7mB[27m Complet                                            [K[7m[18;22H</scripting_practice/.git/COMMIT_EDITMSG      [18;62H[27m[18;1H                                                                   [18;27H[7m[ Writing... ][27m[18;1H                                                                   [18;25H[7m[ Wrote 23 lines ][27m[1;1H[7m/Users/harrison/Desktop/scripting_practice/.git/COMMIT_EDITMSG     [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[6;8H[19;1H[K[20;1H[K[?1049l[main 4f30a1f] Add two new scripts.
+ Date: Wed Apr 16 12:14:55 2025 -0400
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 auto-update.py
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit push[?1l>[?2004l
+]2;git push]1;gitCounting objects: 17, done.
+Delta compression using up to 8 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   5% (1/17)   Writing objects:  11% (2/17)   Writing objects:  17% (3/17)   Writing objects:  23% (4/17)   Writing objects:  29% (5/17)   Writing objects:  35% (6/17)   Writing objects:  41% (7/17)   Writing objects:  47% (8/17)   Writing objects:  52% (9/17)   Writing objects:  58% (10/17)   Writing objects:  64% (11/17)   Writing objects:  70% (12/17)   Writing objects:  76% (13/17)   Writing objects:  82% (14/17)   Writing objects:  88% (15/17)   Writing objects:  94% (16/17)   Writing objects: 100% (17/17)   Writing objects: 100% (17/17), 19.55 KiB | 3.91 MiB/s, done.
+Total 17 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/9)[Kremote: Resolving deltas:  11% (1/9)[Kremote: Resolving deltas:  22% (2/9)[Kremote: Resolving deltas:  33% (3/9)[Kremote: Resolving deltas:  44% (4/9)[Kremote: Resolving deltas:  55% (5/9)[Kremote: Resolving deltas:  66% (6/9)[Kremote: Resolving deltas:  77% (7/9)[Kremote: Resolving deltas:  88% (8/9)[Kremote: Resolving deltas: 100% (9/9)[Kremote: Resolving deltas: 100% (9/9), completed with 1 local object.[K
+To https://github.com/harrisoneanthony/scripting_practice.git
+   5acfc52..4f30a1f  main -> main
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31moutput.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                   ]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice]2;harrison@Harrisons-MacBook-Pro]1;..ting_practice]7;file://Harrisons-MacBook-Pro.local/Users/harrison/desktop/scripting_practice\[0m[27m[24m[J[01;32m➜  [36mscripting_practice[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004hnnano all_checks.py[1m [0m[0m [?1l>[?2004l
+]2;nano all_checks.py]1;nano[?1049h[1;20r[1;1H[J[7m  UW PICO 5.09                    New Buffer                       [27m[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[18;1H                                                                   [18;26H[7m[ Reading file ][27m[18;1H                                                                   [18;26H[7m[ Read 17 lines ][27m[1;1H[J[7m  UW PICO 5.09                File: all_checks.py                  [27m[3;1H#!/usr/bin/env python3[4;1Himport os[5;1Himport sys[7;1Hdef check_reboot():[8;9H"""Returns True if the computer has a pending reboot."""[9;9Hreturn os.path.exists("/run/reboot-required")[11;1Hdef main():[12;9Hif check_reboot():[13;17Hprint("Pending Reboot.")[14;17Hsys.exit(1)[15;9Hprint("Everything ok.")[16;9Hsys.exit(0)[19;1H[K[20;1H[K[19;1H[7m^[27m[7mG[27m Get Help[7m^[27m[7mO[27m WriteOut[7m^[27m[7mR[27m Read Fil[7m^[27m[7mY[27m Prev Pg [7m^[27m[7mK[27m Cut Text[7m^[27m[7mC[27m Cur Pos [K[20;1H[7m^[27m[7mX[27m Exit    [7m^[27m[7mJ[27m Justify [7m^[27m[7mW[27m Where is[7m^[27m[7mV[27m Next Pg [7m^[27m[7mU[27m UnCut Te[7m^[27m[7mT[27m To Spell[K[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[14;28H[1;27H[7mFile: all_checks.py            Modified[27m[15;9H[K[16;9Hprint("Everything ok.")[17;9Hsys.exit(0)[15;1H[15;9Hif[15;12Hdisk_full():[16;9H[K[17;9Hprint("Everything ok.")[16;1H[16;9H[16;17Hprint("Disk[16;29HFull."[17;9H[K[17;1H[17;9Hprint("Everything ok.")[16;35H)[17;9H[K[17;1H[17;9H[17;17Hsys.exit(1)[3;1Hdef main():[K[4;1H        if check_reboot():[5;1H                print("Pending Reboot.")[6;17Hsys.exit(1)[7;1H        if disk_full():[8;9H        print("Disk Full.")[K[9;9H        sys.exit(1)[K[10;9Hprint("Everything ok.")[11;1H        sys.exit(0)[12;9H[K[13;1Hmain()[K[14;17H[K[15;9H[K[16;17H[K[17;17H[K[10;28H[11;20H
